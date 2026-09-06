@@ -1,0 +1,10 @@
+# IDE & Editor files
+.idea/
+*.swp
+*.swo
+
+# Dart & Flutter
+.dart_tool/
+.packages
+build/
+pubspec.lock
