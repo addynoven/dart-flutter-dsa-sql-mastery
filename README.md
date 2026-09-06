@@ -132,15 +132,40 @@ dart --version
 flutter --version
 ```
 
-### How to Use This Repo
-1. Run `dart pub get` to fetch dependencies (e.g. `package:collection` for Heaps).
-2. Open [`todo_list.md`](todo_list.md) to pick a problem.
-3. Open the corresponding `.dart` file under `lib/<topic>/<problem>.dart`.
-4. Run your Dart script in terminal:
-```bash
-dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart
-```
-5. Check off the problem on [`todo_list.md`](todo_list.md) as you complete them!
+---
+
+## 🌿 Git Branching & Practice Workflow
+
+This repository uses a structured two-branch strategy for interview preparation:
+
+- 🧊 **`template` Branch**: Frozen template containing all 150 problem files with empty `Solution` stubs, complete descriptions, and pre-wired `main()` test runners.
+- 🏆 **`main` Branch**: The master answer branch where your completed, working Dart solutions get merged into.
+
+### Step-by-Step Practice Workflow:
+
+1. **Start a new practice branch from `template`**:
+   ```bash
+   git checkout template
+   git checkout -b practice/arrays-and-hashing
+   ```
+
+2. **Solve a problem**:
+   - Open a `.dart` file under `lib/<topic>/<problem>.dart`.
+   - Implement your algorithm inside `class Solution`.
+   - Test your code locally:
+     ```bash
+     dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart
+     ```
+   - Check off completed problems on [`todo_list.md`](todo_list.md).
+
+3. **Merge your answers into `main`**:
+   ```bash
+   git add .
+   git commit -m "Solve Contains Duplicate in Dart"
+   git checkout main
+   git merge practice/arrays-and-hashing
+   git push origin main
+   ```
 
 ---
 Happy Coding & Good Luck with your Flutter Interview! 📱✨
