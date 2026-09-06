@@ -9,6 +9,41 @@ Welcome to the **NeetCode 150 Dart Repository**! This repo provides a structured
 - ⚡ **[Dart Official Documentation](https://dart.dev/guides)**
 
 ---
+
+## 📁 Repository Directory Structure
+
+```text
+neetcode-150-dart/
+├── pubspec.yaml
+├── README.md
+├── todo_list.md
+└── lib/
+    ├── 01_arrays_and_hashing/
+    │   ├── 01_contains_duplicate.dart
+    │   ├── 02_valid_anagram.dart
+    │   ├── 03_two_sum.dart
+    │   └── ...
+    ├── 02_two_pointers/
+    ├── 03_sliding_window/
+    ├── 04_stack/
+    ├── 05_binary_search/
+    ├── 06_linked_list/
+    ├── 07_trees/
+    ├── 08_heap_priority_queue/
+    ├── 09_backtracking/
+    ├── 10_tries/
+    ├── 11_graphs/
+    ├── 12_advanced_graphs/
+    ├── 13_1d_dynamic_programming/
+    ├── 14_2d_dynamic_programming/
+    ├── 15_greedy/
+    ├── 16_intervals/
+    ├── 17_math_and_geometry/
+    └── 18_bit_manipulation/
+```
+
+---
+
 ## 💡 Essential Dart Cheat Sheet for DSA
 
 When interviewing for Flutter / Dart roles, interviewers expect clean, idiomatic Dart code and strong familiarity with Dart standard library collections:
@@ -98,13 +133,14 @@ flutter --version
 ```
 
 ### How to Use This Repo
-1. Open [`todo_list.md`](todo_list.md) to pick a problem.
-2. Write your Dart solution under the corresponding topic folder.
-3. Run your Dart script in terminal:
+1. Run `dart pub get` to fetch dependencies (e.g. `package:collection` for Heaps).
+2. Open [`todo_list.md`](todo_list.md) to pick a problem.
+3. Open the corresponding `.dart` file under `lib/<topic>/<problem>.dart`.
+4. Run your Dart script in terminal:
 ```bash
-dart run bin/contains_duplicate.dart
+dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart
 ```
-4. Check off the problem on [`todo_list.md`](todo_list.md) as you complete them!
+5. Check off the problem on [`todo_list.md`](todo_list.md) as you complete them!
 
 ---
 Happy Coding & Good Luck with your Flutter Interview! 📱✨
