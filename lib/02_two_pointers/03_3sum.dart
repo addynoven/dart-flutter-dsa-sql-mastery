@@ -22,7 +22,7 @@ class TreeNode {
 
 class Solution {
   // TODO: Implement solution for 3Sum
-  dynamic 3sum(/* add parameters */) {
+  dynamic threeSum(/* add parameters */) {
     return null;
   }
 }
@@ -33,8 +33,8 @@ void main() {
   print('Testing: 3Sum');
 
   // Example 1
-  // final result1 = solution.3sum(/* test input */);
-  // print('Result 1: $result1');
+  // final result1 = solution.threeSum(/* test input */);
+  // print('Result 1: \$result1');
 }
 
 /*
