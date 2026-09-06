@@ -1,14 +1,75 @@
 /// Problem: Koko Eating Bananas
 /// Difficulty: Medium
-/// NeetCode Link: https://neetcode.io/problems/eating-bananas/
-/// LeetCode Link: https://leetcode.com/problems/koko-eating-bananas/
+/// NeetCode Link: https://neetcode.io/problems/eating-bananas
+/// LeetCode Link: https://leetcode.com/problems/koko-eating-bananas
 
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-void main() {
-  print('Testing: Koko Eating Bananas');
-  // TODO: Add test cases and invoke solution
+// Node structure helpers for Trees / Linked Lists if needed
+class ListNode {
+  int val;
+  ListNode? next;
+  ListNode([this.val = 0, this.next]);
 }
 
-// TODO: Implement solution method here
+class TreeNode {
+  int val;
+  TreeNode? left;
+  TreeNode? right;
+  TreeNode([this.val = 0, this.left, this.right]);
+}
+
+class Solution {
+  // TODO: Implement solution for Koko Eating Bananas
+  dynamic kokoEatingBananas(/* add parameters */) {
+    return null;
+  }
+}
+
+void main() {
+  final solution = Solution();
+
+  print('Testing: Koko Eating Bananas');
+
+  // Example 1
+  // final result1 = solution.kokoEatingBananas(/* test input */);
+  // print('Result 1: $result1');
+}
+
+/*
+===============================================================================
+QUESTION DESCRIPTION & EXAMPLES
+===============================================================================
+
+Koko loves to eat bananas. There are n piles of bananas, the ith pile has piles[i] bananas. The guards have gone and will come back in h hours.
+
+Koko can decide her bananas-per-hour eating speed of k. Each hour, she chooses some pile of bananas and eats k bananas from that pile. If the pile has less than k bananas, she eats all of them instead and will not eat any more bananas during this hour.
+
+Koko likes to eat slowly but still wants to finish eating all the bananas before the guards return.
+
+Return the minimum integer k such that she can eat all the bananas within h hours.
+
+Example 1:
+
+Input: piles = [3,6,7,11], h = 8
+Output: 4
+
+Example 2:
+
+Input: piles = [30,11,23,4,20], h = 5
+Output: 30
+
+Example 3:
+
+Input: piles = [30,11,23,4,20], h = 6
+Output: 23
+
+Constraints:
+
+	1 <= piles.length <= 104
+	piles.length <= h <= 109
+	1 <= piles[i] <= 109
+
+===============================================================================
+*/

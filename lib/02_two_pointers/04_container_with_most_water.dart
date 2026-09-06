@@ -1,14 +1,71 @@
 /// Problem: Container With Most Water
 /// Difficulty: Medium
-/// NeetCode Link: https://neetcode.io/problems/max-water-container/
-/// LeetCode Link: https://leetcode.com/problems/container-with-most-water/
+/// NeetCode Link: https://neetcode.io/problems/max-water-container
+/// LeetCode Link: https://leetcode.com/problems/container-with-most-water
 
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-void main() {
-  print('Testing: Container With Most Water');
-  // TODO: Add test cases and invoke solution
+// Node structure helpers for Trees / Linked Lists if needed
+class ListNode {
+  int val;
+  ListNode? next;
+  ListNode([this.val = 0, this.next]);
 }
 
-// TODO: Implement solution method here
+class TreeNode {
+  int val;
+  TreeNode? left;
+  TreeNode? right;
+  TreeNode([this.val = 0, this.left, this.right]);
+}
+
+class Solution {
+  // TODO: Implement solution for Container With Most Water
+  dynamic containerWithMostWater(/* add parameters */) {
+    return null;
+  }
+}
+
+void main() {
+  final solution = Solution();
+
+  print('Testing: Container With Most Water');
+
+  // Example 1
+  // final result1 = solution.containerWithMostWater(/* test input */);
+  // print('Result 1: $result1');
+}
+
+/*
+===============================================================================
+QUESTION DESCRIPTION & EXAMPLES
+===============================================================================
+
+You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+
+Find two lines that together with the x-axis form a container, such that the container contains the most water.
+
+Return the maximum amount of water a container can store.
+
+Notice that you may not slant the container.
+
+Example 1:
+
+Input: height = [1,8,6,2,5,4,8,3,7]
+Output: 49
+Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+
+Example 2:
+
+Input: height = [1,1]
+Output: 1
+
+Constraints:
+
+	n == height.length
+	2 <= n <= 105
+	0 <= height[i] <= 104
+
+===============================================================================
+*/

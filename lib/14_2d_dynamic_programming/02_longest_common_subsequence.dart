@@ -1,14 +1,77 @@
 /// Problem: Longest Common Subsequence
 /// Difficulty: Medium
-/// NeetCode Link: https://neetcode.io/problems/longest-common-subsequence/
-/// LeetCode Link: https://leetcode.com/problems/longest-common-subsequence/
+/// NeetCode Link: https://neetcode.io/problems/longest-common-subsequence
+/// LeetCode Link: https://leetcode.com/problems/longest-common-subsequence
 
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-void main() {
-  print('Testing: Longest Common Subsequence');
-  // TODO: Add test cases and invoke solution
+// Node structure helpers for Trees / Linked Lists if needed
+class ListNode {
+  int val;
+  ListNode? next;
+  ListNode([this.val = 0, this.next]);
 }
 
-// TODO: Implement solution method here
+class TreeNode {
+  int val;
+  TreeNode? left;
+  TreeNode? right;
+  TreeNode([this.val = 0, this.left, this.right]);
+}
+
+class Solution {
+  // TODO: Implement solution for Longest Common Subsequence
+  dynamic longestCommonSubsequence(/* add parameters */) {
+    return null;
+  }
+}
+
+void main() {
+  final solution = Solution();
+
+  print('Testing: Longest Common Subsequence');
+
+  // Example 1
+  // final result1 = solution.longestCommonSubsequence(/* test input */);
+  // print('Result 1: $result1');
+}
+
+/*
+===============================================================================
+QUESTION DESCRIPTION & EXAMPLES
+===============================================================================
+
+Given two strings text1 and text2, return the length of their longest common subsequence. If there is no common subsequence, return 0.
+
+A subsequence of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.
+
+	For example, "ace" is a subsequence of "abcde".
+
+A common subsequence of two strings is a subsequence that is common to both strings.
+
+Example 1:
+
+Input: text1 = "abcde", text2 = "ace" 
+Output: 3  
+Explanation: The longest common subsequence is "ace" and its length is 3.
+
+Example 2:
+
+Input: text1 = "abc", text2 = "abc"
+Output: 3
+Explanation: The longest common subsequence is "abc" and its length is 3.
+
+Example 3:
+
+Input: text1 = "abc", text2 = "def"
+Output: 0
+Explanation: There is no such common subsequence, so the result is 0.
+
+Constraints:
+
+	1 <= text1.length, text2.length <= 1000
+	text1 and text2 consist of only lowercase English characters.
+
+===============================================================================
+*/

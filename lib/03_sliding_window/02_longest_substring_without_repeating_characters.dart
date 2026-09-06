@@ -1,14 +1,72 @@
 /// Problem: Longest Substring Without Repeating Characters
 /// Difficulty: Medium
-/// NeetCode Link: https://neetcode.io/problems/longest-substring-without-duplicates/
-/// LeetCode Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+/// NeetCode Link: https://neetcode.io/problems/longest-substring-without-duplicates
+/// LeetCode Link: https://leetcode.com/problems/longest-substring-without-repeating-characters
 
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-void main() {
-  print('Testing: Longest Substring Without Repeating Characters');
-  // TODO: Add test cases and invoke solution
+// Node structure helpers for Trees / Linked Lists if needed
+class ListNode {
+  int val;
+  ListNode? next;
+  ListNode([this.val = 0, this.next]);
 }
 
-// TODO: Implement solution method here
+class TreeNode {
+  int val;
+  TreeNode? left;
+  TreeNode? right;
+  TreeNode([this.val = 0, this.left, this.right]);
+}
+
+class Solution {
+  // TODO: Implement solution for Longest Substring Without Repeating Characters
+  dynamic longestSubstringWithoutRepeatingCharacters(/* add parameters */) {
+    return null;
+  }
+}
+
+void main() {
+  final solution = Solution();
+
+  print('Testing: Longest Substring Without Repeating Characters');
+
+  // Example 1
+  // final result1 = solution.longestSubstringWithoutRepeatingCharacters(/* test input */);
+  // print('Result 1: $result1');
+}
+
+/*
+===============================================================================
+QUESTION DESCRIPTION & EXAMPLES
+===============================================================================
+
+Given a string s, find the length of the longest substring without duplicate characters.
+
+Example 1:
+
+Input: s = "abcabcbb"
+Output: 3
+Explanation: The answer is "abc", with the length of 3. Note that "bca" and "cab" are also correct answers.
+
+Example 2:
+
+Input: s = "bbbbb"
+Output: 1
+Explanation: The answer is "b", with the length of 1.
+
+Example 3:
+
+Input: s = "pwwkew"
+Output: 3
+Explanation: The answer is "wke", with the length of 3.
+Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+
+Constraints:
+
+	0 <= s.length <= 105
+	s consists of English letters, digits, symbols and spaces.
+
+===============================================================================
+*/

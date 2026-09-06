@@ -1,14 +1,68 @@
 /// Problem: Invert Binary Tree
 /// Difficulty: Easy
-/// NeetCode Link: https://neetcode.io/problems/invert-a-binary-tree/
-/// LeetCode Link: https://leetcode.com/problems/invert-binary-tree/
+/// NeetCode Link: https://neetcode.io/problems/invert-a-binary-tree
+/// LeetCode Link: https://leetcode.com/problems/invert-binary-tree
 
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-void main() {
-  print('Testing: Invert Binary Tree');
-  // TODO: Add test cases and invoke solution
+// Node structure helpers for Trees / Linked Lists if needed
+class ListNode {
+  int val;
+  ListNode? next;
+  ListNode([this.val = 0, this.next]);
 }
 
-// TODO: Implement solution method here
+class TreeNode {
+  int val;
+  TreeNode? left;
+  TreeNode? right;
+  TreeNode([this.val = 0, this.left, this.right]);
+}
+
+class Solution {
+  // TODO: Implement solution for Invert Binary Tree
+  dynamic invertBinaryTree(/* add parameters */) {
+    return null;
+  }
+}
+
+void main() {
+  final solution = Solution();
+
+  print('Testing: Invert Binary Tree');
+
+  // Example 1
+  // final result1 = solution.invertBinaryTree(/* test input */);
+  // print('Result 1: $result1');
+}
+
+/*
+===============================================================================
+QUESTION DESCRIPTION & EXAMPLES
+===============================================================================
+
+Given the root of a binary tree, invert the tree, and return its root.
+
+Example 1:
+
+Input: root = [4,2,7,1,3,6,9]
+Output: [4,7,2,9,6,3,1]
+
+Example 2:
+
+Input: root = [2,1,3]
+Output: [2,3,1]
+
+Example 3:
+
+Input: root = []
+Output: []
+
+Constraints:
+
+	The number of nodes in the tree is in the range [0, 100].
+	-100 <= Node.val <= 100
+
+===============================================================================
+*/
