@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Maximum Product Subarray
-  dynamic maximumProductSubarray(/* add parameters */) {
+  /// Solution method for Maximum Product Subarray
+  dynamic maximumProductSubarray(dynamic nums) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Maximum Product Subarray');
-
-  // Example 1
-  // final result1 = solution.maximumProductSubarray(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Maximum Product Subarray ===\n');
+  // --- Example 1 ---
+  final nums1 = [2,3,-2,4];
+  final result1 = solution.maximumProductSubarray(nums1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  6\n');
+  // --- Example 2 ---
+  final nums2 = [-2,0,-1];
+  final result2 = solution.maximumProductSubarray(nums2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  0\n');
 }
 
 /*

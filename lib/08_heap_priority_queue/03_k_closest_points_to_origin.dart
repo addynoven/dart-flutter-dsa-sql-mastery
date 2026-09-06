@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for K Closest Points to Origin
-  dynamic kClosestPointsToOrigin(/* add parameters */) {
+  /// Solution method for K Closest Points to Origin
+  dynamic kClosestPointsToOrigin(dynamic points, dynamic k) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: K Closest Points to Origin');
-
-  // Example 1
-  // final result1 = solution.kClosestPointsToOrigin(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: K Closest Points to Origin ===\n');
+  // --- Example 1 ---
+  final points1 = [[1,3],[-2,2]];
+  final k1 = 1;
+  final result1 = solution.kClosestPointsToOrigin(points1, k1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [[-2,2]]\n');
+  // --- Example 2 ---
+  final points2 = [[3,3],[5,-1],[-2,4]];
+  final k2 = 2;
+  final result2 = solution.kClosestPointsToOrigin(points2, k2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [[3,3],[-2,4]]\n');
 }
 
 /*

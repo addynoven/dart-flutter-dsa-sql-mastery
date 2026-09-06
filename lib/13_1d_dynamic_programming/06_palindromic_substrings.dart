@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Palindromic Substrings
-  dynamic palindromicSubstrings(/* add parameters */) {
+  /// Solution method for Palindromic Substrings
+  dynamic palindromicSubstrings(dynamic s) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Palindromic Substrings');
-
-  // Example 1
-  // final result1 = solution.palindromicSubstrings(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Palindromic Substrings ===\n');
+  // --- Example 1 ---
+  final s1 = "abc";
+  final result1 = solution.palindromicSubstrings(s1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  3\n');
+  // --- Example 2 ---
+  final s2 = "aaa";
+  final result2 = solution.palindromicSubstrings(s2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  6\n');
 }
 
 /*

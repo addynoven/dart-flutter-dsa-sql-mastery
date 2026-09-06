@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Longest Increasing Path In a Matrix
-  dynamic longestIncreasingPathInAMatrix(/* add parameters */) {
+  /// Solution method for Longest Increasing Path In a Matrix
+  dynamic longestIncreasingPathInAMatrix(dynamic matrix) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Longest Increasing Path In a Matrix');
-
-  // Example 1
-  // final result1 = solution.longestIncreasingPathInAMatrix(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Longest Increasing Path In a Matrix ===\n');
+  // --- Example 1 ---
+  final matrix1 = [[9,9,4],[6,6,8],[2,1,1]];
+  final result1 = solution.longestIncreasingPathInAMatrix(matrix1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  4\n');
+  // --- Example 2 ---
+  final matrix2 = [[3,4,5],[3,2,6],[2,2,1]];
+  final result2 = solution.longestIncreasingPathInAMatrix(matrix2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  4\n');
+  // --- Example 3 ---
+  final matrix3 = [[1]];
+  final result3 = solution.longestIncreasingPathInAMatrix(matrix3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  1\n');
 }
 
 /*

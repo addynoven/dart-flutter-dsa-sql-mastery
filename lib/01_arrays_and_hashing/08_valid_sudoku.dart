@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Valid Sudoku
-  dynamic validSudoku(/* add parameters */) {
+  /// Solution method for Valid Sudoku
+  dynamic validSudoku(dynamic board) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Valid Sudoku');
-
-  // Example 1
-  // final result1 = solution.validSudoku(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Valid Sudoku ===\n');
+  // --- Example 1 ---
+  final board1 = [["5","3",".",".","7",".",".",".","."] ,["6",".",".","1","9","5",".",".","."] ,[".","9","8",".",".",".",".","6","."] ,["8",".",".",".","6",".",".",".","3"] ,["4",".",".","8",".","3",".",".","1"] ,["7",".",".",".","2",".",".",".","6"] ,[".","6",".",".",".",".","2","8","."] ,[".",".",".","4","1","9",".",".","5"] ,[".",".",".",".","8",".",".","7","9"]];
+  final result1 = solution.validSudoku(board1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final board2 = [["8","3",".",".","7",".",".",".","."] ,["6",".",".","1","9","5",".",".","."] ,[".","9","8",".",".",".",".","6","."] ,["8",".",".",".","6",".",".",".","3"] ,["4",".",".","8",".","3",".",".","1"] ,["7",".",".",".","2",".",".",".","6"] ,[".","6",".",".",".",".","2","8","."] ,[".",".",".","4","1","9",".",".","5"] ,[".",".",".",".","8",".",".","7","9"]];
+  final result2 = solution.validSudoku(board2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
 }
 
 /*

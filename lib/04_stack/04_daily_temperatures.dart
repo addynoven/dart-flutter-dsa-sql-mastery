@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Daily Temperatures
-  dynamic dailyTemperatures(/* add parameters */) {
+  /// Solution method for Daily Temperatures
+  dynamic dailyTemperatures(dynamic temperatures) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Daily Temperatures');
-
-  // Example 1
-  // final result1 = solution.dailyTemperatures(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Daily Temperatures ===\n');
+  // --- Example 1 ---
+  final temperatures1 = [73,74,75,71,69,72,76,73];
+  final result1 = solution.dailyTemperatures(temperatures1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [1,1,4,2,1,1,0,0]\n');
+  // --- Example 2 ---
+  final temperatures2 = [30,40,50,60];
+  final result2 = solution.dailyTemperatures(temperatures2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [1,1,1,0]\n');
+  // --- Example 3 ---
+  final temperatures3 = [30,60,90];
+  final result3 = solution.dailyTemperatures(temperatures3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  [1,1,0]\n');
 }
 
 /*

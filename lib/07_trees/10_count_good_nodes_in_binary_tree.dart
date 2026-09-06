@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Count Good Nodes In Binary Tree
-  dynamic countGoodNodesInBinaryTree(/* add parameters */) {
+  /// Solution method for Count Good Nodes In Binary Tree
+  dynamic countGoodNodesInBinaryTree(dynamic root) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Count Good Nodes In Binary Tree');
-
-  // Example 1
-  // final result1 = solution.countGoodNodesInBinaryTree(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Count Good Nodes In Binary Tree ===\n');
+  // --- Example 1 ---
+  final root1 = [3,1,4,3,null,1,5];
+  final result1 = solution.countGoodNodesInBinaryTree(root1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  4\n');
+  // --- Example 2 ---
+  final root2 = [3,3,null,4,2];
+  final result2 = solution.countGoodNodesInBinaryTree(root2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  3\n');
+  // --- Example 3 ---
+  final root3 = [1];
+  final result3 = solution.countGoodNodesInBinaryTree(root3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  1\n');
 }
 
 /*

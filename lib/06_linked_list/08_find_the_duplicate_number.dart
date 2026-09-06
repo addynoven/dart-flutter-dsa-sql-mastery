@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Find The Duplicate Number
-  dynamic findTheDuplicateNumber(/* add parameters */) {
+  /// Solution method for Find The Duplicate Number
+  dynamic findTheDuplicateNumber(dynamic nums) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Find The Duplicate Number');
-
-  // Example 1
-  // final result1 = solution.findTheDuplicateNumber(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Find The Duplicate Number ===\n');
+  // --- Example 1 ---
+  final nums1 = [1,3,4,2,2];
+  final result1 = solution.findTheDuplicateNumber(nums1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  2\n');
+  // --- Example 2 ---
+  final nums2 = [3,1,3,4,2];
+  final result2 = solution.findTheDuplicateNumber(nums2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  3\n');
+  // --- Example 3 ---
+  final nums3 = [3,3,3,3,3];
+  final result3 = solution.findTheDuplicateNumber(nums3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  3\n');
 }
 
 /*

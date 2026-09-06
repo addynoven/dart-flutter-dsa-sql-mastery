@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Serialize And Deserialize Binary Tree
-  dynamic serializeAndDeserializeBinaryTree(/* add parameters */) {
+  /// Solution method for Serialize And Deserialize Binary Tree
+  dynamic serializeAndDeserializeBinaryTree(dynamic root) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Serialize And Deserialize Binary Tree');
-
-  // Example 1
-  // final result1 = solution.serializeAndDeserializeBinaryTree(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Serialize And Deserialize Binary Tree ===\n');
+  // --- Example 1 ---
+  final root1 = [1,2,3,null,null,4,5];
+  final result1 = solution.serializeAndDeserializeBinaryTree(root1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [1,2,3,null,null,4,5]\n');
+  // --- Example 2 ---
+  final root2 = [];
+  final result2 = solution.serializeAndDeserializeBinaryTree(root2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  []\n');
 }
 
 /*

@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Longest Consecutive Sequence
-  dynamic longestConsecutiveSequence(/* add parameters */) {
+  /// Solution method for Longest Consecutive Sequence
+  dynamic longestConsecutiveSequence(dynamic nums) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Longest Consecutive Sequence');
-
-  // Example 1
-  // final result1 = solution.longestConsecutiveSequence(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Longest Consecutive Sequence ===\n');
+  // --- Example 1 ---
+  final nums1 = [100,4,200,1,3,2];
+  final result1 = solution.longestConsecutiveSequence(nums1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  4\n');
+  // --- Example 2 ---
+  final nums2 = [0,3,7,2,5,8,4,6,0,1];
+  final result2 = solution.longestConsecutiveSequence(nums2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  9\n');
+  // --- Example 3 ---
+  final nums3 = [1,0,1,2];
+  final result3 = solution.longestConsecutiveSequence(nums3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  3\n');
 }
 
 /*

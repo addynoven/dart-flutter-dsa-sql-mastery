@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Trapping Rain Water
-  dynamic trappingRainWater(/* add parameters */) {
+  /// Solution method for Trapping Rain Water
+  dynamic trappingRainWater(dynamic height) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Trapping Rain Water');
-
-  // Example 1
-  // final result1 = solution.trappingRainWater(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Trapping Rain Water ===\n');
+  // --- Example 1 ---
+  final height1 = [0,1,0,2,1,0,1,3,2,1,2,1];
+  final result1 = solution.trappingRainWater(height1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  6\n');
+  // --- Example 2 ---
+  final height2 = [4,2,0,3,2,5];
+  final result2 = solution.trappingRainWater(height2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  9\n');
 }
 
 /*

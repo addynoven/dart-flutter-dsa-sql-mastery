@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Partition Equal Subset Sum
-  dynamic partitionEqualSubsetSum(/* add parameters */) {
+  /// Solution method for Partition Equal Subset Sum
+  dynamic partitionEqualSubsetSum(dynamic nums) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Partition Equal Subset Sum');
-
-  // Example 1
-  // final result1 = solution.partitionEqualSubsetSum(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Partition Equal Subset Sum ===\n');
+  // --- Example 1 ---
+  final nums1 = [1,5,11,5];
+  final result1 = solution.partitionEqualSubsetSum(nums1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final nums2 = [1,2,3,5];
+  final result2 = solution.partitionEqualSubsetSum(nums2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
 }
 
 /*

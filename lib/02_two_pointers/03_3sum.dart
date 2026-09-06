@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for 3Sum
-  dynamic threeSum(/* add parameters */) {
+  /// Solution method for 3Sum
+  dynamic threesum(dynamic nums) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: 3Sum');
-
-  // Example 1
-  // final result1 = solution.threeSum(/* test input */);
-  // print('Result 1: \$result1');
+  print('=== Testing: 3Sum ===\n');
+  // --- Example 1 ---
+  final nums1 = [-1,0,1,2,-1,-4];
+  final result1 = solution.threesum(nums1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [[-1,-1,2],[-1,0,1]]\n');
+  // --- Example 2 ---
+  final nums2 = [0,1,1];
+  final result2 = solution.threesum(nums2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  []\n');
+  // --- Example 3 ---
+  final nums3 = [0,0,0];
+  final result3 = solution.threesum(nums3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  [[0,0,0]]\n');
 }
 
 /*

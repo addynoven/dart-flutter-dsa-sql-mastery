@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Min Cost Climbing Stairs
-  dynamic minCostClimbingStairs(/* add parameters */) {
+  /// Solution method for Min Cost Climbing Stairs
+  dynamic minCostClimbingStairs(dynamic cost) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Min Cost Climbing Stairs');
-
-  // Example 1
-  // final result1 = solution.minCostClimbingStairs(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Min Cost Climbing Stairs ===\n');
+  // --- Example 1 ---
+  final cost1 = [10,15,20];
+  final result1 = solution.minCostClimbingStairs(cost1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  15\n');
+  // --- Example 2 ---
+  final cost2 = [1,100,1,1,1,100,1,1,100,1];
+  final result2 = solution.minCostClimbingStairs(cost2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  6\n');
 }
 
 /*

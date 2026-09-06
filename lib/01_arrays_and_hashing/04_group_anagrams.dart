@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Group Anagrams
-  dynamic groupAnagrams(/* add parameters */) {
+  /// Solution method for Group Anagrams
+  dynamic groupAnagrams(dynamic strs) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Group Anagrams');
-
-  // Example 1
-  // final result1 = solution.groupAnagrams(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Group Anagrams ===\n');
+  // --- Example 1 ---
+  final strs1 = ["eat","tea","tan","ate","nat","bat"];
+  final result1 = solution.groupAnagrams(strs1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [["bat"],["nat","tan"],["ate","eat","tea"]]\n');
+  // --- Example 2 ---
+  final strs2 = [""];
+  final result2 = solution.groupAnagrams(strs2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [[""]]\n');
+  // --- Example 3 ---
+  final strs3 = ["a"];
+  final result3 = solution.groupAnagrams(strs3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  [["a"]]\n');
 }
 
 /*

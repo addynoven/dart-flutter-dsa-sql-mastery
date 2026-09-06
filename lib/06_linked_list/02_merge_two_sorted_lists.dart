@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Merge Two Sorted Lists
-  dynamic mergeTwoSortedLists(/* add parameters */) {
+  /// Solution method for Merge Two Sorted Lists
+  dynamic mergeTwoSortedLists(dynamic list1, dynamic list2) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Merge Two Sorted Lists');
-
-  // Example 1
-  // final result1 = solution.mergeTwoSortedLists(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Merge Two Sorted Lists ===\n');
+  // --- Example 1 ---
+  final list11 = [1,2,4];
+  final list21 = [1,3,4];
+  final result1 = solution.mergeTwoSortedLists(list11, list21);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [1,1,2,3,4,4]\n');
+  // --- Example 2 ---
+  final list12 = [];
+  final list22 = [];
+  final result2 = solution.mergeTwoSortedLists(list12, list22);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  []\n');
+  // --- Example 3 ---
+  final list13 = [];
+  final list23 = [0];
+  final result3 = solution.mergeTwoSortedLists(list13, list23);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  [0]\n');
 }
 
 /*

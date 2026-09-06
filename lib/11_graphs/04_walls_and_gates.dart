@@ -6,7 +6,9 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+const int INF = 2147483647;
+
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +23,21 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Walls And Gates
-  dynamic wallsAndGates(/* add parameters */) {
+  /// Solution method for Walls And Gates
+  dynamic wallsAndGates(dynamic param) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Walls And Gates');
-
-  // Example 1
-  // final result1 = solution.wallsAndGates(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Walls And Gates ===\n');
+  // --- Example 1 ---
+  final param1 = [   [INF, -1,  0, INF],   [INF, INF, INF, -1],   [INF, -1, INF, -1],   [  0, -1, INF, INF] ];
+  final result1 = solution.wallsAndGates(param1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [   [ 3, -1,  0,  1],   [ 2,  2,  1, -1],   [ 1, -1,  2, -1],   [ 0, -1,  3,  4] ]\n');
 }
 
 /*

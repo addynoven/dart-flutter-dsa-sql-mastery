@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for House Robber II
-  dynamic houseRobberIi(/* add parameters */) {
+  /// Solution method for House Robber II
+  dynamic houseRobberIi(dynamic nums) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: House Robber II');
-
-  // Example 1
-  // final result1 = solution.houseRobberIi(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: House Robber II ===\n');
+  // --- Example 1 ---
+  final nums1 = [2,3,2];
+  final result1 = solution.houseRobberIi(nums1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  3\n');
+  // --- Example 2 ---
+  final nums2 = [1,2,3,1];
+  final result2 = solution.houseRobberIi(nums2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  4\n');
+  // --- Example 3 ---
+  final nums3 = [1,2,3];
+  final result3 = solution.houseRobberIi(nums3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  3\n');
 }
 
 /*

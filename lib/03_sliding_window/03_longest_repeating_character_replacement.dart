@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Longest Repeating Character Replacement
-  dynamic longestRepeatingCharacterReplacement(/* add parameters */) {
+  /// Solution method for Longest Repeating Character Replacement
+  dynamic longestRepeatingCharacterReplacement(dynamic s, dynamic k) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Longest Repeating Character Replacement');
-
-  // Example 1
-  // final result1 = solution.longestRepeatingCharacterReplacement(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Longest Repeating Character Replacement ===\n');
+  // --- Example 1 ---
+  final s1 = "ABAB";
+  final k1 = 2;
+  final result1 = solution.longestRepeatingCharacterReplacement(s1, k1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  4\n');
+  // --- Example 2 ---
+  final s2 = "AABABBA";
+  final k2 = 1;
+  final result2 = solution.longestRepeatingCharacterReplacement(s2, k2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  4\n');
 }
 
 /*

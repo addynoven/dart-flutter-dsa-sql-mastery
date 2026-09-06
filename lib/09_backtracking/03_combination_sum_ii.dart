@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Combination Sum II
-  dynamic combinationSumIi(/* add parameters */) {
+  /// Solution method for Combination Sum II
+  dynamic combinationSumIi(dynamic candidates, dynamic target) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Combination Sum II');
-
-  // Example 1
-  // final result1 = solution.combinationSumIi(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Combination Sum II ===\n');
+  // --- Example 1 ---
+  final candidates1 = [10,1,2,7,6,1,5];
+  final target1 = 8;
+  final result1 = solution.combinationSumIi(candidates1, target1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [ [1,1,6], [1,2,5], [1,7], [2,6] ]\n');
+  // --- Example 2 ---
+  final candidates2 = [2,5,2,1,2];
+  final target2 = 5;
+  final result2 = solution.combinationSumIi(candidates2, target2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [ [1,2,2], [5] ]\n');
 }
 
 /*

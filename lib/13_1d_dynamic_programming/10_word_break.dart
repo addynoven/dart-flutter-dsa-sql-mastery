@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Word Break
-  dynamic wordBreak(/* add parameters */) {
+  /// Solution method for Word Break
+  dynamic wordBreak(dynamic s, dynamic wordDict) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Word Break');
-
-  // Example 1
-  // final result1 = solution.wordBreak(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Word Break ===\n');
+  // --- Example 1 ---
+  final s1 = "leetcode";
+  final wordDict1 = ["leet","code"];
+  final result1 = solution.wordBreak(s1, wordDict1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final s2 = "applepenapple";
+  final wordDict2 = ["apple","pen"];
+  final result2 = solution.wordBreak(s2, wordDict2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  true\n');
+  // --- Example 3 ---
+  final s3 = "catsandog";
+  final wordDict3 = ["cats","dog","sand","and","cat"];
+  final result3 = solution.wordBreak(s3, wordDict3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  false\n');
 }
 
 /*

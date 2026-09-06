@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Burst Balloons
-  dynamic burstBalloons(/* add parameters */) {
+  /// Solution method for Burst Balloons
+  dynamic burstBalloons(dynamic nums) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Burst Balloons');
-
-  // Example 1
-  // final result1 = solution.burstBalloons(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Burst Balloons ===\n');
+  // --- Example 1 ---
+  final nums1 = [3,1,5,8];
+  final result1 = solution.burstBalloons(nums1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  167\n');
+  // --- Example 2 ---
+  final nums2 = [1,5];
+  final result2 = solution.burstBalloons(nums2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  10\n');
 }
 
 /*

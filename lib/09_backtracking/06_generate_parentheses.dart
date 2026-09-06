@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Generate Parentheses
-  dynamic generateParentheses(/* add parameters */) {
+  /// Solution method for Generate Parentheses
+  dynamic generateParentheses(dynamic n) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Generate Parentheses');
-
-  // Example 1
-  // final result1 = solution.generateParentheses(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Generate Parentheses ===\n');
+  // --- Example 1 ---
+  final n1 = 3;
+  final result1 = solution.generateParentheses(n1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  ["((()))","(()())","(())()","()(())","()()()"]\n');
+  // --- Example 2 ---
+  final n2 = 1;
+  final result2 = solution.generateParentheses(n2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  ["()"]\n');
 }
 
 /*

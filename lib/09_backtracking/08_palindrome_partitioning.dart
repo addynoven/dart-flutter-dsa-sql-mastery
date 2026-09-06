@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Palindrome Partitioning
-  dynamic palindromePartitioning(/* add parameters */) {
+  /// Solution method for Palindrome Partitioning
+  dynamic palindromePartitioning(dynamic s) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Palindrome Partitioning');
-
-  // Example 1
-  // final result1 = solution.palindromePartitioning(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Palindrome Partitioning ===\n');
+  // --- Example 1 ---
+  final s1 = "aab";
+  final result1 = solution.palindromePartitioning(s1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [["a","a","b"],["aa","b"]]\n');
+  // --- Example 2 ---
+  final s2 = "a";
+  final result2 = solution.palindromePartitioning(s2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [["a"]]\n');
 }
 
 /*

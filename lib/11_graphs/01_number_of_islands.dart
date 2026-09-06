@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Number of Islands
-  dynamic numberOfIslands(/* add parameters */) {
+  /// Solution method for Number of Islands
+  dynamic numberOfIslands(dynamic grid) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Number of Islands');
-
-  // Example 1
-  // final result1 = solution.numberOfIslands(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Number of Islands ===\n');
+  // --- Example 1 ---
+  final grid1 = [   ["1","1","1","1","0"],   ["1","1","0","1","0"],   ["1","1","0","0","0"],   ["0","0","0","0","0"] ];
+  final result1 = solution.numberOfIslands(grid1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  1\n');
+  // --- Example 2 ---
+  final grid2 = [   ["1","1","0","0","0"],   ["1","1","0","0","0"],   ["0","0","1","0","0"],   ["0","0","0","1","1"] ];
+  final result2 = solution.numberOfIslands(grid2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  3\n');
 }
 
 /*

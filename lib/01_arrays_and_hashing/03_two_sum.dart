@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Two Sum
-  dynamic twoSum(/* add parameters */) {
+  /// Solution method for Two Sum
+  dynamic twoSum(dynamic nums, dynamic target) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Two Sum');
-
-  // Example 1
-  // final result1 = solution.twoSum(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Two Sum ===\n');
+  // --- Example 1 ---
+  final nums1 = [2,7,11,15];
+  final target1 = 9;
+  final result1 = solution.twoSum(nums1, target1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [0,1]\n');
+  // --- Example 2 ---
+  final nums2 = [3,2,4];
+  final target2 = 6;
+  final result2 = solution.twoSum(nums2, target2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [1,2]\n');
+  // --- Example 3 ---
+  final nums3 = [3,3];
+  final target3 = 6;
+  final result3 = solution.twoSum(nums3, target3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  [0,1]\n');
 }
 
 /*

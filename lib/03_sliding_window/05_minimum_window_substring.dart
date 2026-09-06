@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Minimum Window Substring
-  dynamic minimumWindowSubstring(/* add parameters */) {
+  /// Solution method for Minimum Window Substring
+  dynamic minimumWindowSubstring(dynamic s, dynamic t) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Minimum Window Substring');
-
-  // Example 1
-  // final result1 = solution.minimumWindowSubstring(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Minimum Window Substring ===\n');
+  // --- Example 1 ---
+  final s1 = "ADOBECODEBANC";
+  final t1 = "ABC";
+  final result1 = solution.minimumWindowSubstring(s1, t1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  "BANC"\n');
+  // --- Example 2 ---
+  final s2 = "a";
+  final t2 = "a";
+  final result2 = solution.minimumWindowSubstring(s2, t2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  "a"\n');
+  // --- Example 3 ---
+  final s3 = "a";
+  final t3 = "aa";
+  final result3 = solution.minimumWindowSubstring(s3, t3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  ""\n');
 }
 
 /*

@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Minimum Interval to Include Each Query
-  dynamic minimumIntervalToIncludeEachQuery(/* add parameters */) {
+  /// Solution method for Minimum Interval to Include Each Query
+  dynamic minimumIntervalToIncludeEachQuery(dynamic intervals, dynamic queries) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Minimum Interval to Include Each Query');
-
-  // Example 1
-  // final result1 = solution.minimumIntervalToIncludeEachQuery(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Minimum Interval to Include Each Query ===\n');
+  // --- Example 1 ---
+  final intervals1 = [[1,4],[2,4],[3,6],[4,4]];
+  final queries1 = [2,3,4,5];
+  final result1 = solution.minimumIntervalToIncludeEachQuery(intervals1, queries1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [3,3,1,4]\n');
+  // --- Example 2 ---
+  final intervals2 = [[2,3],[2,5],[1,8],[20,25]];
+  final queries2 = [2,19,5,22];
+  final result2 = solution.minimumIntervalToIncludeEachQuery(intervals2, queries2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [2,-1,4,6]\n');
 }
 
 /*

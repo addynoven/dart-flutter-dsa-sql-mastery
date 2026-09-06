@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Set Matrix Zeroes
-  dynamic setMatrixZeroes(/* add parameters */) {
+  /// Solution method for Set Matrix Zeroes
+  dynamic setMatrixZeroes(dynamic matrix) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Set Matrix Zeroes');
-
-  // Example 1
-  // final result1 = solution.setMatrixZeroes(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Set Matrix Zeroes ===\n');
+  // --- Example 1 ---
+  final matrix1 = [[1,1,1],[1,0,1],[1,1,1]];
+  final result1 = solution.setMatrixZeroes(matrix1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [[1,0,1],[0,0,0],[1,0,1]]\n');
+  // --- Example 2 ---
+  final matrix2 = [[0,1,2,0],[3,4,5,2],[1,3,1,5]];
+  final result2 = solution.setMatrixZeroes(matrix2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [[0,0,0,0],[0,4,5,0],[0,3,1,0]]\n');
 }
 
 /*

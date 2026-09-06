@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Longest Substring Without Repeating Characters
-  dynamic longestSubstringWithoutRepeatingCharacters(/* add parameters */) {
+  /// Solution method for Longest Substring Without Repeating Characters
+  dynamic longestSubstringWithoutRepeatingCharacters(dynamic s) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Longest Substring Without Repeating Characters');
-
-  // Example 1
-  // final result1 = solution.longestSubstringWithoutRepeatingCharacters(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Longest Substring Without Repeating Characters ===\n');
+  // --- Example 1 ---
+  final s1 = "abcabcbb";
+  final result1 = solution.longestSubstringWithoutRepeatingCharacters(s1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  3\n');
+  // --- Example 2 ---
+  final s2 = "bbbbb";
+  final result2 = solution.longestSubstringWithoutRepeatingCharacters(s2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  1\n');
+  // --- Example 3 ---
+  final s3 = "pwwkew";
+  final result3 = solution.longestSubstringWithoutRepeatingCharacters(s3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  3\n');
 }
 
 /*

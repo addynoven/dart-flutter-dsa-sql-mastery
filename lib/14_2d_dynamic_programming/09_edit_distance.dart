@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Edit Distance
-  dynamic editDistance(/* add parameters */) {
+  /// Solution method for Edit Distance
+  dynamic editDistance(dynamic word1, dynamic word2) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Edit Distance');
-
-  // Example 1
-  // final result1 = solution.editDistance(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Edit Distance ===\n');
+  // --- Example 1 ---
+  final word11 = "horse";
+  final word21 = "ros";
+  final result1 = solution.editDistance(word11, word21);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  3\n');
+  // --- Example 2 ---
+  final word12 = "intention";
+  final word22 = "execution";
+  final result2 = solution.editDistance(word12, word22);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  5\n');
 }
 
 /*

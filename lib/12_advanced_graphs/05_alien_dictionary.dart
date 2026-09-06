@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Alien Dictionary
-  dynamic alienDictionary(/* add parameters */) {
+  /// Solution method for Alien Dictionary
+  dynamic alienDictionary(dynamic words) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Alien Dictionary');
-
-  // Example 1
-  // final result1 = solution.alienDictionary(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Alien Dictionary ===\n');
+  // --- Example 1 ---
+  final words1 = ["wrt","wrf","er","ett","rftt"];
+  final result1 = solution.alienDictionary(words1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  "wertf"\n');
+  // --- Example 2 ---
+  final words2 = ["z","x"];
+  final result2 = solution.alienDictionary(words2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  "zx"\n');
+  // --- Example 3 ---
+  final words3 = ["z","x","z"];
+  final result3 = solution.alienDictionary(words3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  ""\n');
 }
 
 /*
@@ -56,7 +67,7 @@ Output: "zx"
 
 Example 3:
 Input: words = ["z","x","z"]
-Output: "" 
+Output: ""
 
 ===============================================================================
 */

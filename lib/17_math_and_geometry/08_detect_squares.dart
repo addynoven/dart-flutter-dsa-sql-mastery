@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,20 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Detect Squares
+  /// Solution method for Detect Squares
   dynamic detectSquares(/* add parameters */) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Detect Squares');
-
-  // Example 1
-  // final result1 = solution.detectSquares(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Detect Squares ===\n');
+  // --- Example 1 ---
+  final result1 = solution.detectSquares();
+  print('Example 1 Result: $result1');
+  print('Expected Output:  null\n');
 }
 
 /*

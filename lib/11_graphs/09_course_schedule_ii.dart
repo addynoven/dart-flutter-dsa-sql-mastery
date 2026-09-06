@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Course Schedule II
-  dynamic courseScheduleIi(/* add parameters */) {
+  /// Solution method for Course Schedule II
+  dynamic courseScheduleIi(dynamic numCourses, dynamic prerequisites) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Course Schedule II');
-
-  // Example 1
-  // final result1 = solution.courseScheduleIi(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Course Schedule II ===\n');
+  // --- Example 1 ---
+  final numCourses1 = 2;
+  final prerequisites1 = [[1,0]];
+  final result1 = solution.courseScheduleIi(numCourses1, prerequisites1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [0,1]\n');
+  // --- Example 2 ---
+  final numCourses2 = 4;
+  final prerequisites2 = [[1,0],[2,0],[3,1],[3,2]];
+  final result2 = solution.courseScheduleIi(numCourses2, prerequisites2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [0,2,1,3]\n');
+  // --- Example 3 ---
+  final numCourses3 = 1;
+  final prerequisites3 = [];
+  final result3 = solution.courseScheduleIi(numCourses3, prerequisites3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  [0]\n');
 }
 
 /*

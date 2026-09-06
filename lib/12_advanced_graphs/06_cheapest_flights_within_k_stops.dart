@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,43 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Cheapest Flights Within K Stops
-  dynamic cheapestFlightsWithinKStops(/* add parameters */) {
+  /// Solution method for Cheapest Flights Within K Stops
+  dynamic cheapestFlightsWithinKStops(dynamic n, dynamic flights, dynamic src, dynamic dst, dynamic k) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Cheapest Flights Within K Stops');
-
-  // Example 1
-  // final result1 = solution.cheapestFlightsWithinKStops(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Cheapest Flights Within K Stops ===\n');
+  // --- Example 1 ---
+  final n1 = 4;
+  final flights1 = [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]];
+  final src1 = 0;
+  final dst1 = 3;
+  final k1 = 1;
+  final result1 = solution.cheapestFlightsWithinKStops(n1, flights1, src1, dst1, k1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  700\n');
+  // --- Example 2 ---
+  final n2 = 3;
+  final flights2 = [[0,1,100],[1,2,100],[0,2,500]];
+  final src2 = 0;
+  final dst2 = 2;
+  final k2 = 1;
+  final result2 = solution.cheapestFlightsWithinKStops(n2, flights2, src2, dst2, k2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  200\n');
+  // --- Example 3 ---
+  final n3 = 3;
+  final flights3 = [[0,1,100],[1,2,100],[0,2,500]];
+  final src3 = 0;
+  final dst3 = 2;
+  final k3 = 0;
+  final result3 = solution.cheapestFlightsWithinKStops(n3, flights3, src3, dst3, k3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  500\n');
 }
 
 /*

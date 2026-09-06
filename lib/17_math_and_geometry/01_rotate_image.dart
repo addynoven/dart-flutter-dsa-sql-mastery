@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Rotate Image
-  dynamic rotateImage(/* add parameters */) {
+  /// Solution method for Rotate Image
+  dynamic rotateImage(dynamic matrix) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Rotate Image');
-
-  // Example 1
-  // final result1 = solution.rotateImage(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Rotate Image ===\n');
+  // --- Example 1 ---
+  final matrix1 = [[1,2,3],[4,5,6],[7,8,9]];
+  final result1 = solution.rotateImage(matrix1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [[7,4,1],[8,5,2],[9,6,3]]\n');
+  // --- Example 2 ---
+  final matrix2 = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]];
+  final result2 = solution.rotateImage(matrix2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]\n');
 }
 
 /*

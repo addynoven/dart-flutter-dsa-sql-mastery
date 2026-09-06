@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Gas Station
-  dynamic gasStation(/* add parameters */) {
+  /// Solution method for Gas Station
+  dynamic gasStation(dynamic gas, dynamic cost) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Gas Station');
-
-  // Example 1
-  // final result1 = solution.gasStation(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Gas Station ===\n');
+  // --- Example 1 ---
+  final gas1 = [1,2,3,4,5];
+  final cost1 = [3,4,5,1,2];
+  final result1 = solution.gasStation(gas1, cost1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  3\n');
+  // --- Example 2 ---
+  final gas2 = [2,3,4];
+  final cost2 = [3,4,3];
+  final result2 = solution.gasStation(gas2, cost2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  -1\n');
 }
 
 /*

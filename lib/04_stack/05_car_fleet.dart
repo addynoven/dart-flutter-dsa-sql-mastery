@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,37 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Car Fleet
-  dynamic carFleet(/* add parameters */) {
+  /// Solution method for Car Fleet
+  dynamic carFleet(dynamic target, dynamic position, dynamic speed) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Car Fleet');
-
-  // Example 1
-  // final result1 = solution.carFleet(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Car Fleet ===\n');
+  // --- Example 1 ---
+  final target1 = 12;
+  final position1 = [10,8,0,5,3];
+  final speed1 = [2,4,1,1,3];
+  final result1 = solution.carFleet(target1, position1, speed1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  3\n');
+  // --- Example 2 ---
+  final target2 = 10;
+  final position2 = [3];
+  final speed2 = [3];
+  final result2 = solution.carFleet(target2, position2, speed2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  1\n');
+  // --- Example 3 ---
+  final target3 = 100;
+  final position3 = [0,2,4];
+  final speed3 = [4,2,1];
+  final result3 = solution.carFleet(target3, position3, speed3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  1\n');
 }
 
 /*

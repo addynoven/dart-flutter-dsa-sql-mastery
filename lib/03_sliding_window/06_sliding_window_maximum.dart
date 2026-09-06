@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Sliding Window Maximum
-  dynamic slidingWindowMaximum(/* add parameters */) {
+  /// Solution method for Sliding Window Maximum
+  dynamic slidingWindowMaximum(dynamic nums, dynamic k) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Sliding Window Maximum');
-
-  // Example 1
-  // final result1 = solution.slidingWindowMaximum(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Sliding Window Maximum ===\n');
+  // --- Example 1 ---
+  final nums1 = [1,3,-1,-3,5,3,6,7];
+  final k1 = 3;
+  final result1 = solution.slidingWindowMaximum(nums1, k1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [3,3,5,5,6,7]\n');
+  // --- Example 2 ---
+  final nums2 = [1];
+  final k2 = 1;
+  final result2 = solution.slidingWindowMaximum(nums2, k2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [1]\n');
 }
 
 /*

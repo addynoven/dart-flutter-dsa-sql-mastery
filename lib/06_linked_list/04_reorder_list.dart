@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Reorder List
-  dynamic reorderList(/* add parameters */) {
+  /// Solution method for Reorder List
+  dynamic reorderList(dynamic head) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Reorder List');
-
-  // Example 1
-  // final result1 = solution.reorderList(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Reorder List ===\n');
+  // --- Example 1 ---
+  final head1 = [1,2,3,4];
+  final result1 = solution.reorderList(head1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [1,4,2,3]\n');
+  // --- Example 2 ---
+  final head2 = [1,2,3,4,5];
+  final result2 = solution.reorderList(head2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [1,5,2,4,3]\n');
 }
 
 /*

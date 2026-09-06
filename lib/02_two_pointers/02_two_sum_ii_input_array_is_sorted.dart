@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Two Sum II Input Array Is Sorted
-  dynamic twoSumIiInputArrayIsSorted(/* add parameters */) {
+  /// Solution method for Two Sum II Input Array Is Sorted
+  dynamic twoSumIiInputArrayIsSorted(dynamic numbers, dynamic target) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Two Sum II Input Array Is Sorted');
-
-  // Example 1
-  // final result1 = solution.twoSumIiInputArrayIsSorted(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Two Sum II Input Array Is Sorted ===\n');
+  // --- Example 1 ---
+  final numbers1 = [2,7,11,15];
+  final target1 = 9;
+  final result1 = solution.twoSumIiInputArrayIsSorted(numbers1, target1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [1,2]\n');
+  // --- Example 2 ---
+  final numbers2 = [2,3,4];
+  final target2 = 6;
+  final result2 = solution.twoSumIiInputArrayIsSorted(numbers2, target2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [1,3]\n');
+  // --- Example 3 ---
+  final numbers3 = [-1,0];
+  final target3 = -1;
+  final result3 = solution.twoSumIiInputArrayIsSorted(numbers3, target3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  [1,2]\n');
 }
 
 /*

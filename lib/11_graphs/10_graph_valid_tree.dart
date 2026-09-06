@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Graph Valid Tree
-  dynamic graphValidTree(/* add parameters */) {
+  /// Solution method for Graph Valid Tree
+  dynamic graphValidTree(dynamic n, dynamic edges) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Graph Valid Tree');
-
-  // Example 1
-  // final result1 = solution.graphValidTree(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Graph Valid Tree ===\n');
+  // --- Example 1 ---
+  final n1 = 5;
+  final edges1 = [[0,1],[0,2],[0,3],[1,4]];
+  final result1 = solution.graphValidTree(n1, edges1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final n2 = 5;
+  final edges2 = [[0,1],[1,2],[2,3],[1,3],[1,4]];
+  final result2 = solution.graphValidTree(n2, edges2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
 }
 
 /*

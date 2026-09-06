@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Clone Graph
-  dynamic cloneGraph(/* add parameters */) {
+  /// Solution method for Clone Graph
+  dynamic cloneGraph(dynamic adjList) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Clone Graph');
-
-  // Example 1
-  // final result1 = solution.cloneGraph(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Clone Graph ===\n');
+  // --- Example 1 ---
+  final adjList1 = [[2,4],[1,3],[2,4],[1,3]];
+  final result1 = solution.cloneGraph(adjList1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [[2,4],[1,3],[2,4],[1,3]]\n');
+  // --- Example 2 ---
+  final adjList2 = [[]];
+  final result2 = solution.cloneGraph(adjList2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [[]]\n');
+  // --- Example 3 ---
+  final adjList3 = [];
+  final result3 = solution.cloneGraph(adjList3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  []\n');
 }
 
 /*

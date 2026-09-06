@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Swim In Rising Water
-  dynamic swimInRisingWater(/* add parameters */) {
+  /// Solution method for Swim In Rising Water
+  dynamic swimInRisingWater(dynamic grid) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Swim In Rising Water');
-
-  // Example 1
-  // final result1 = solution.swimInRisingWater(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Swim In Rising Water ===\n');
+  // --- Example 1 ---
+  final grid1 = [[0,2],[1,3]];
+  final result1 = solution.swimInRisingWater(grid1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  3\n');
+  // --- Example 2 ---
+  final grid2 = [[0,1,2,3,4],[24,23,22,21,5],[12,13,14,15,16],[11,17,18,19,20],[10,9,8,7,6]];
+  final result2 = solution.swimInRisingWater(grid2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  16\n');
 }
 
 /*

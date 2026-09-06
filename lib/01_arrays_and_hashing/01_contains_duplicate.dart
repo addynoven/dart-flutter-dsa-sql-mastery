@@ -4,10 +4,9 @@
 /// LeetCode Link: https://leetcode.com/problems/contains-duplicate
 
 import 'dart:collection';
-
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -22,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Contains Duplicate
-  dynamic containsDuplicate(/* add parameters */) {
+  /// Solution method for Contains Duplicate
+  dynamic containsDuplicate(dynamic nums) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Contains Duplicate');
-
-  // Example 1
-  // final result1 = solution.containsDuplicate(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Contains Duplicate ===\n');
+  // --- Example 1 ---
+  final nums1 = [1,2,3,1];
+  final result1 = solution.containsDuplicate(nums1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final nums2 = [1,2,3,4];
+  final result2 = solution.containsDuplicate(nums2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
+  // --- Example 3 ---
+  final nums3 = [1,1,1,3,3,4,3,2,4,2];
+  final result3 = solution.containsDuplicate(nums3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  true\n');
 }
 
 /*

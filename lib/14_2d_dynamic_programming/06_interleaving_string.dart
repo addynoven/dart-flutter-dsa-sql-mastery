@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,37 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Interleaving String
-  dynamic interleavingString(/* add parameters */) {
+  /// Solution method for Interleaving String
+  dynamic interleavingString(dynamic s1, dynamic s2, dynamic s3) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Interleaving String');
-
-  // Example 1
-  // final result1 = solution.interleavingString(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Interleaving String ===\n');
+  // --- Example 1 ---
+  final s11 = "aabcc";
+  final s21 = "dbbca";
+  final s31 = "aadbbcbcac";
+  final result1 = solution.interleavingString(s11, s21, s31);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final s12 = "aabcc";
+  final s22 = "dbbca";
+  final s32 = "aadbbbaccc";
+  final result2 = solution.interleavingString(s12, s22, s32);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
+  // --- Example 3 ---
+  final s13 = "";
+  final s23 = "";
+  final s33 = "";
+  final result3 = solution.interleavingString(s13, s23, s33);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  true\n');
 }
 
 /*

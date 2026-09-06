@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Hand of Straights
-  dynamic handOfStraights(/* add parameters */) {
+  /// Solution method for Hand of Straights
+  dynamic handOfStraights(dynamic hand, dynamic groupSize) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Hand of Straights');
-
-  // Example 1
-  // final result1 = solution.handOfStraights(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Hand of Straights ===\n');
+  // --- Example 1 ---
+  final hand1 = [1,2,3,6,2,3,4,7,8];
+  final groupSize1 = 3;
+  final result1 = solution.handOfStraights(hand1, groupSize1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final hand2 = [1,2,3,4,5];
+  final groupSize2 = 4;
+  final result2 = solution.handOfStraights(hand2, groupSize2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
 }
 
 /*

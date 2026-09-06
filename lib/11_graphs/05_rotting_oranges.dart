@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Rotting Oranges
-  dynamic rottingOranges(/* add parameters */) {
+  /// Solution method for Rotting Oranges
+  dynamic rottingOranges(dynamic grid) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Rotting Oranges');
-
-  // Example 1
-  // final result1 = solution.rottingOranges(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Rotting Oranges ===\n');
+  // --- Example 1 ---
+  final grid1 = [[2,1,1],[1,1,0],[0,1,1]];
+  final result1 = solution.rottingOranges(grid1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  4\n');
+  // --- Example 2 ---
+  final grid2 = [[2,1,1],[0,1,1],[1,0,1]];
+  final result2 = solution.rottingOranges(grid2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  -1\n');
+  // --- Example 3 ---
+  final grid3 = [[0,2]];
+  final result3 = solution.rottingOranges(grid3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  0\n');
 }
 
 /*

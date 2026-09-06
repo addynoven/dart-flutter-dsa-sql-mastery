@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Surrounded Regions
-  dynamic surroundedRegions(/* add parameters */) {
+  /// Solution method for Surrounded Regions
+  dynamic surroundedRegions(dynamic board) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Surrounded Regions');
-
-  // Example 1
-  // final result1 = solution.surroundedRegions(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Surrounded Regions ===\n');
+  // --- Example 1 ---
+  final board1 = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]];
+  final result1 = solution.surroundedRegions(board1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [["X","X","X","X"],["X","X","X","X"],["X","X","X","X"],["X","O","X","X"]]\n');
+  // --- Example 2 ---
+  final board2 = [["X"]];
+  final result2 = solution.surroundedRegions(board2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [["X"]]\n');
 }
 
 /*

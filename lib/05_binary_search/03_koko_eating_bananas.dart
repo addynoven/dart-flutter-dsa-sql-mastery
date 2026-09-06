@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Koko Eating Bananas
-  dynamic kokoEatingBananas(/* add parameters */) {
+  /// Solution method for Koko Eating Bananas
+  dynamic kokoEatingBananas(dynamic piles, dynamic h) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Koko Eating Bananas');
-
-  // Example 1
-  // final result1 = solution.kokoEatingBananas(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Koko Eating Bananas ===\n');
+  // --- Example 1 ---
+  final piles1 = [3,6,7,11];
+  final h1 = 8;
+  final result1 = solution.kokoEatingBananas(piles1, h1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  4\n');
+  // --- Example 2 ---
+  final piles2 = [30,11,23,4,20];
+  final h2 = 5;
+  final result2 = solution.kokoEatingBananas(piles2, h2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  30\n');
+  // --- Example 3 ---
+  final piles3 = [30,11,23,4,20];
+  final h3 = 6;
+  final result3 = solution.kokoEatingBananas(piles3, h3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  23\n');
 }
 
 /*

@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Subsets II
-  dynamic subsetsIi(/* add parameters */) {
+  /// Solution method for Subsets II
+  dynamic subsetsIi(dynamic nums) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Subsets II');
-
-  // Example 1
-  // final result1 = solution.subsetsIi(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Subsets II ===\n');
+  // --- Example 1 ---
+  final nums1 = [1,2,2];
+  final result1 = solution.subsetsIi(nums1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [[],[1],[1,2],[1,2,2],[2],[2,2]]\n');
+  // --- Example 2 ---
+  final nums2 = [0];
+  final result2 = solution.subsetsIi(nums2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [[],[0]]\n');
 }
 
 /*

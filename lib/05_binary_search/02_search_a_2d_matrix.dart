@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Search a 2D Matrix
-  dynamic searchA2DMatrix(/* add parameters */) {
+  /// Solution method for Search a 2D Matrix
+  dynamic searchA2dMatrix(dynamic matrix, dynamic target) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Search a 2D Matrix');
-
-  // Example 1
-  // final result1 = solution.searchA2DMatrix(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Search a 2D Matrix ===\n');
+  // --- Example 1 ---
+  final matrix1 = [[1,3,5,7],[10,11,16,20],[23,30,34,60]];
+  final target1 = 3;
+  final result1 = solution.searchA2dMatrix(matrix1, target1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final matrix2 = [[1,3,5,7],[10,11,16,20],[23,30,34,60]];
+  final target2 = 13;
+  final result2 = solution.searchA2dMatrix(matrix2, target2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
 }
 
 /*

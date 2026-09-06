@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Subtree of Another Tree
-  dynamic subtreeOfAnotherTree(/* add parameters */) {
+  /// Solution method for Subtree of Another Tree
+  dynamic subtreeOfAnotherTree(dynamic root, dynamic subRoot) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Subtree of Another Tree');
-
-  // Example 1
-  // final result1 = solution.subtreeOfAnotherTree(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Subtree of Another Tree ===\n');
+  // --- Example 1 ---
+  final root1 = [3,4,5,1,2];
+  final subRoot1 = [4,1,2];
+  final result1 = solution.subtreeOfAnotherTree(root1, subRoot1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final root2 = [3,4,5,1,2,null,null,null,null,0];
+  final subRoot2 = [4,1,2];
+  final result2 = solution.subtreeOfAnotherTree(root2, subRoot2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
 }
 
 /*

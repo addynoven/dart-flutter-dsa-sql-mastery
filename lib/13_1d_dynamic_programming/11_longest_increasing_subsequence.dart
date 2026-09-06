@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Longest Increasing Subsequence
-  dynamic longestIncreasingSubsequence(/* add parameters */) {
+  /// Solution method for Longest Increasing Subsequence
+  dynamic longestIncreasingSubsequence(dynamic nums) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Longest Increasing Subsequence');
-
-  // Example 1
-  // final result1 = solution.longestIncreasingSubsequence(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Longest Increasing Subsequence ===\n');
+  // --- Example 1 ---
+  final nums1 = [10,9,2,5,3,7,101,18];
+  final result1 = solution.longestIncreasingSubsequence(nums1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  4\n');
+  // --- Example 2 ---
+  final nums2 = [0,1,0,3,2,3];
+  final result2 = solution.longestIncreasingSubsequence(nums2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  4\n');
+  // --- Example 3 ---
+  final nums3 = [7,7,7,7,7,7,7];
+  final result3 = solution.longestIncreasingSubsequence(nums3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  1\n');
 }
 
 /*

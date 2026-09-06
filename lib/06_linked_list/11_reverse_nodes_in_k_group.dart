@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Reverse Nodes In K Group
-  dynamic reverseNodesInKGroup(/* add parameters */) {
+  /// Solution method for Reverse Nodes In K Group
+  dynamic reverseNodesInKGroup(dynamic head, dynamic k) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Reverse Nodes In K Group');
-
-  // Example 1
-  // final result1 = solution.reverseNodesInKGroup(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Reverse Nodes In K Group ===\n');
+  // --- Example 1 ---
+  final head1 = [1,2,3,4,5];
+  final k1 = 2;
+  final result1 = solution.reverseNodesInKGroup(head1, k1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [2,1,4,3,5]\n');
+  // --- Example 2 ---
+  final head2 = [1,2,3,4,5];
+  final k2 = 3;
+  final result2 = solution.reverseNodesInKGroup(head2, k2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [3,2,1,4,5]\n');
 }
 
 /*

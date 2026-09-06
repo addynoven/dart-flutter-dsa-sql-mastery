@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Distinct Subsequences
-  dynamic distinctSubsequences(/* add parameters */) {
+  /// Solution method for Distinct Subsequences
+  dynamic distinctSubsequences(dynamic s, dynamic t) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Distinct Subsequences');
-
-  // Example 1
-  // final result1 = solution.distinctSubsequences(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Distinct Subsequences ===\n');
+  // --- Example 1 ---
+  final s1 = "rabbbit";
+  final t1 = "rabbit";
+  final result1 = solution.distinctSubsequences(s1, t1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  3\n');
+  // --- Example 2 ---
+  final s2 = "babgbag";
+  final t2 = "bag";
+  final result2 = solution.distinctSubsequences(s2, t2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  5\n');
 }
 
 /*

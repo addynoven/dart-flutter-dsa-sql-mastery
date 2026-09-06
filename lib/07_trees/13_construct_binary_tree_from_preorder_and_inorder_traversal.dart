@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Construct Binary Tree From Preorder And Inorder Traversal
-  dynamic constructBinaryTreeFromPreorderAndInorderTraversal(/* add parameters */) {
+  /// Solution method for Construct Binary Tree From Preorder And Inorder Traversal
+  dynamic constructBinaryTreeFromPreorderAndInorderTraversal(dynamic preorder, dynamic inorder) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Construct Binary Tree From Preorder And Inorder Traversal');
-
-  // Example 1
-  // final result1 = solution.constructBinaryTreeFromPreorderAndInorderTraversal(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Construct Binary Tree From Preorder And Inorder Traversal ===\n');
+  // --- Example 1 ---
+  final preorder1 = [3,9,20,15,7];
+  final inorder1 = [9,3,15,20,7];
+  final result1 = solution.constructBinaryTreeFromPreorderAndInorderTraversal(preorder1, inorder1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [3,9,20,null,null,15,7]\n');
+  // --- Example 2 ---
+  final preorder2 = [-1];
+  final inorder2 = [-1];
+  final result2 = solution.constructBinaryTreeFromPreorderAndInorderTraversal(preorder2, inorder2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [-1]\n');
 }
 
 /*

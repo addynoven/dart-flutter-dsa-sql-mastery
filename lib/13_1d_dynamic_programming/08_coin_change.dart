@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Coin Change
-  dynamic coinChange(/* add parameters */) {
+  /// Solution method for Coin Change
+  dynamic coinChange(dynamic coins, dynamic amount) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Coin Change');
-
-  // Example 1
-  // final result1 = solution.coinChange(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Coin Change ===\n');
+  // --- Example 1 ---
+  final coins1 = [1,2,5];
+  final amount1 = 11;
+  final result1 = solution.coinChange(coins1, amount1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  3\n');
+  // --- Example 2 ---
+  final coins2 = [2];
+  final amount2 = 3;
+  final result2 = solution.coinChange(coins2, amount2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  -1\n');
+  // --- Example 3 ---
+  final coins3 = [1];
+  final amount3 = 0;
+  final result3 = solution.coinChange(coins3, amount3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  0\n');
 }
 
 /*

@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Number of 1 Bits
-  dynamic numberOf1Bits(/* add parameters */) {
+  /// Solution method for Number of 1 Bits
+  dynamic numberOf1Bits(dynamic n) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Number of 1 Bits');
-
-  // Example 1
-  // final result1 = solution.numberOf1Bits(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Number of 1 Bits ===\n');
+  // --- Example 1 ---
+  final n1 = 11;
+  final result1 = solution.numberOf1Bits(n1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  3\n');
+  // --- Example 2 ---
+  final n2 = 128;
+  final result2 = solution.numberOf1Bits(n2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  1\n');
+  // --- Example 3 ---
+  final n3 = 2147483645;
+  final result3 = solution.numberOf1Bits(n3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  30\n');
 }
 
 /*

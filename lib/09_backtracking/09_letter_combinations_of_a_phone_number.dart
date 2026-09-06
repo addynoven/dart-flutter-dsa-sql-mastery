@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Letter Combinations of a Phone Number
-  dynamic letterCombinationsOfAPhoneNumber(/* add parameters */) {
+  /// Solution method for Letter Combinations of a Phone Number
+  dynamic letterCombinationsOfAPhoneNumber(dynamic digits) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Letter Combinations of a Phone Number');
-
-  // Example 1
-  // final result1 = solution.letterCombinationsOfAPhoneNumber(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Letter Combinations of a Phone Number ===\n');
+  // --- Example 1 ---
+  final digits1 = "23";
+  final result1 = solution.letterCombinationsOfAPhoneNumber(digits1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  ["ad","ae","af","bd","be","bf","cd","ce","cf"]\n');
+  // --- Example 2 ---
+  final digits2 = "2";
+  final result2 = solution.letterCombinationsOfAPhoneNumber(digits2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  ["a","b","c"]\n');
 }
 
 /*

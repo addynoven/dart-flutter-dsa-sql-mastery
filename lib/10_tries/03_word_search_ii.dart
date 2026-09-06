@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Word Search II
-  dynamic wordSearchIi(/* add parameters */) {
+  /// Solution method for Word Search II
+  dynamic wordSearchIi(dynamic board, dynamic words) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Word Search II');
-
-  // Example 1
-  // final result1 = solution.wordSearchIi(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Word Search II ===\n');
+  // --- Example 1 ---
+  final board1 = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]];
+  final words1 = ["oath","pea","eat","rain"];
+  final result1 = solution.wordSearchIi(board1, words1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  ["eat","oath"]\n');
+  // --- Example 2 ---
+  final board2 = [["a","b"],["c","d"]];
+  final words2 = ["abcb"];
+  final result2 = solution.wordSearchIi(board2, words2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  []\n');
 }
 
 /*

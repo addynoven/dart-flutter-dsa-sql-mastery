@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Median of Two Sorted Arrays
-  dynamic medianOfTwoSortedArrays(/* add parameters */) {
+  /// Solution method for Median of Two Sorted Arrays
+  dynamic medianOfTwoSortedArrays(dynamic nums1, dynamic nums2) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Median of Two Sorted Arrays');
-
-  // Example 1
-  // final result1 = solution.medianOfTwoSortedArrays(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Median of Two Sorted Arrays ===\n');
+  // --- Example 1 ---
+  final nums11 = [1,3];
+  final nums21 = [2];
+  final result1 = solution.medianOfTwoSortedArrays(nums11, nums21);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  2.00000\n');
+  // --- Example 2 ---
+  final nums12 = [1,2];
+  final nums22 = [3,4];
+  final result2 = solution.medianOfTwoSortedArrays(nums12, nums22);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  2.50000\n');
 }
 
 /*

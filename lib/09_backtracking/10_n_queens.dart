@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for N Queens
-  dynamic nQueens(/* add parameters */) {
+  /// Solution method for N Queens
+  dynamic nQueens(dynamic n) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: N Queens');
-
-  // Example 1
-  // final result1 = solution.nQueens(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: N Queens ===\n');
+  // --- Example 1 ---
+  final n1 = 4;
+  final result1 = solution.nQueens(n1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]\n');
+  // --- Example 2 ---
+  final n2 = 1;
+  final result2 = solution.nQueens(n2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [["Q"]]\n');
 }
 
 /*

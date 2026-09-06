@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,37 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Lowest Common Ancestor of a Binary Search Tree
-  dynamic lowestCommonAncestorOfABinarySearchTree(/* add parameters */) {
+  /// Solution method for Lowest Common Ancestor of a Binary Search Tree
+  dynamic lowestCommonAncestorOfABinarySearchTree(dynamic root, dynamic p, dynamic q) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Lowest Common Ancestor of a Binary Search Tree');
-
-  // Example 1
-  // final result1 = solution.lowestCommonAncestorOfABinarySearchTree(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Lowest Common Ancestor of a Binary Search Tree ===\n');
+  // --- Example 1 ---
+  final root1 = [6,2,8,0,4,7,9,null,null,3,5];
+  final p1 = 2;
+  final q1 = 8;
+  final result1 = solution.lowestCommonAncestorOfABinarySearchTree(root1, p1, q1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  6\n');
+  // --- Example 2 ---
+  final root2 = [6,2,8,0,4,7,9,null,null,3,5];
+  final p2 = 2;
+  final q2 = 4;
+  final result2 = solution.lowestCommonAncestorOfABinarySearchTree(root2, p2, q2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  2\n');
+  // --- Example 3 ---
+  final root3 = [2,1];
+  final p3 = 2;
+  final q3 = 1;
+  final result3 = solution.lowestCommonAncestorOfABinarySearchTree(root3, p3, q3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  2\n');
 }
 
 /*

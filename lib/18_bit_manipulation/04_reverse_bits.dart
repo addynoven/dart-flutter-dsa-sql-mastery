@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Reverse Bits
-  dynamic reverseBits(/* add parameters */) {
+  /// Solution method for Reverse Bits
+  dynamic reverseBits(dynamic n) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Reverse Bits');
-
-  // Example 1
-  // final result1 = solution.reverseBits(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Reverse Bits ===\n');
+  // --- Example 1 ---
+  final n1 = 43261596;
+  final result1 = solution.reverseBits(n1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  964176192\n');
+  // --- Example 2 ---
+  final n2 = 2147483644;
+  final result2 = solution.reverseBits(n2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  1073741822\n');
 }
 
 /*

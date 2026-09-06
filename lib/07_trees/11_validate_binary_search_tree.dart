@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Validate Binary Search Tree
-  dynamic validateBinarySearchTree(/* add parameters */) {
+  /// Solution method for Validate Binary Search Tree
+  dynamic validateBinarySearchTree(dynamic root) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Validate Binary Search Tree');
-
-  // Example 1
-  // final result1 = solution.validateBinarySearchTree(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Validate Binary Search Tree ===\n');
+  // --- Example 1 ---
+  final root1 = [2,1,3];
+  final result1 = solution.validateBinarySearchTree(root1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final root2 = [5,1,4,null,null,3,6];
+  final result2 = solution.validateBinarySearchTree(root2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
 }
 
 /*

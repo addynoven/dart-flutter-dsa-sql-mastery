@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Plus One
-  dynamic plusOne(/* add parameters */) {
+  /// Solution method for Plus One
+  dynamic plusOne(dynamic digits) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Plus One');
-
-  // Example 1
-  // final result1 = solution.plusOne(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Plus One ===\n');
+  // --- Example 1 ---
+  final digits1 = [1,2,3];
+  final result1 = solution.plusOne(digits1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [1,2,4]\n');
+  // --- Example 2 ---
+  final digits2 = [4,3,2,1];
+  final result2 = solution.plusOne(digits2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [4,3,2,2]\n');
+  // --- Example 3 ---
+  final digits3 = [9];
+  final result3 = solution.plusOne(digits3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  [1,0]\n');
 }
 
 /*

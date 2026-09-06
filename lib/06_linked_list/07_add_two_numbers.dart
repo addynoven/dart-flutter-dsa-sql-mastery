@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Add Two Numbers
-  dynamic addTwoNumbers(/* add parameters */) {
+  /// Solution method for Add Two Numbers
+  dynamic addTwoNumbers(dynamic l1, dynamic l2) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Add Two Numbers');
-
-  // Example 1
-  // final result1 = solution.addTwoNumbers(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Add Two Numbers ===\n');
+  // --- Example 1 ---
+  final l11 = [2,4,3];
+  final l21 = [5,6,4];
+  final result1 = solution.addTwoNumbers(l11, l21);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [7,0,8]\n');
+  // --- Example 2 ---
+  final l12 = [0];
+  final l22 = [0];
+  final result2 = solution.addTwoNumbers(l12, l22);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [0]\n');
+  // --- Example 3 ---
+  final l13 = [9,9,9,9,9,9,9];
+  final l23 = [9,9,9,9];
+  final result3 = solution.addTwoNumbers(l13, l23);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  [8,9,9,9,0,0,0,1]\n');
 }
 
 /*

@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Reconstruct Itinerary
-  dynamic reconstructItinerary(/* add parameters */) {
+  /// Solution method for Reconstruct Itinerary
+  dynamic reconstructItinerary(dynamic tickets) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Reconstruct Itinerary');
-
-  // Example 1
-  // final result1 = solution.reconstructItinerary(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Reconstruct Itinerary ===\n');
+  // --- Example 1 ---
+  final tickets1 = [["MUC","LHR"],["JFK","MUC"],["SFO","SJC"],["LHR","SFO"]];
+  final result1 = solution.reconstructItinerary(tickets1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  ["JFK","MUC","LHR","SFO","SJC"]\n');
+  // --- Example 2 ---
+  final tickets2 = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]];
+  final result2 = solution.reconstructItinerary(tickets2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  ["JFK","ATL","JFK","SFO","ATL","SFO"]\n');
 }
 
 /*

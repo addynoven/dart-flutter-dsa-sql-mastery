@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Binary Search
-  dynamic binarySearch(/* add parameters */) {
+  /// Solution method for Binary Search
+  dynamic binarySearch(dynamic nums, dynamic target) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Binary Search');
-
-  // Example 1
-  // final result1 = solution.binarySearch(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Binary Search ===\n');
+  // --- Example 1 ---
+  final nums1 = [-1,0,3,5,9,12];
+  final target1 = 9;
+  final result1 = solution.binarySearch(nums1, target1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  4\n');
+  // --- Example 2 ---
+  final nums2 = [-1,0,3,5,9,12];
+  final target2 = 2;
+  final result2 = solution.binarySearch(nums2, target2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  -1\n');
 }
 
 /*

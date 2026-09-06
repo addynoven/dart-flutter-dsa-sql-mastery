@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Find Minimum In Rotated Sorted Array
-  dynamic findMinimumInRotatedSortedArray(/* add parameters */) {
+  /// Solution method for Find Minimum In Rotated Sorted Array
+  dynamic findMinimumInRotatedSortedArray(dynamic nums) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Find Minimum In Rotated Sorted Array');
-
-  // Example 1
-  // final result1 = solution.findMinimumInRotatedSortedArray(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Find Minimum In Rotated Sorted Array ===\n');
+  // --- Example 1 ---
+  final nums1 = [3,4,5,1,2];
+  final result1 = solution.findMinimumInRotatedSortedArray(nums1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  1\n');
+  // --- Example 2 ---
+  final nums2 = [4,5,6,7,0,1,2];
+  final result2 = solution.findMinimumInRotatedSortedArray(nums2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  0\n');
+  // --- Example 3 ---
+  final nums3 = [11,13,15,17];
+  final result3 = solution.findMinimumInRotatedSortedArray(nums3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  11\n');
 }
 
 /*

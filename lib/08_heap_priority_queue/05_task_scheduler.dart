@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Task Scheduler
-  dynamic taskScheduler(/* add parameters */) {
+  /// Solution method for Task Scheduler
+  dynamic taskScheduler(dynamic tasks, dynamic n) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Task Scheduler');
-
-  // Example 1
-  // final result1 = solution.taskScheduler(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Task Scheduler ===\n');
+  // --- Example 1 ---
+  final tasks1 = ["A","A","A","B","B","B"];
+  final n1 = 2;
+  final result1 = solution.taskScheduler(tasks1, n1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  8\n');
+  // --- Example 2 ---
+  final tasks2 = ["A","C","A","B","D","B"];
+  final n2 = 1;
+  final result2 = solution.taskScheduler(tasks2, n2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  6\n');
+  // --- Example 3 ---
+  final tasks3 = ["A","A","A", "B","B","B"];
+  final n3 = 3;
+  final result3 = solution.taskScheduler(tasks3, n3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  10\n');
 }
 
 /*

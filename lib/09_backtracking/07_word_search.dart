@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Word Search
-  dynamic wordSearch(/* add parameters */) {
+  /// Solution method for Word Search
+  dynamic wordSearch(dynamic board, dynamic word) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Word Search');
-
-  // Example 1
-  // final result1 = solution.wordSearch(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Word Search ===\n');
+  // --- Example 1 ---
+  final board1 = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]];
+  final word1 = "ABCCED";
+  final result1 = solution.wordSearch(board1, word1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final board2 = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]];
+  final word2 = "SEE";
+  final result2 = solution.wordSearch(board2, word2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  true\n');
+  // --- Example 3 ---
+  final board3 = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]];
+  final word3 = "ABCB";
+  final result3 = solution.wordSearch(board3, word3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  false\n');
 }
 
 /*

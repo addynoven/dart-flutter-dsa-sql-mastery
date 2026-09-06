@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Last Stone Weight
-  dynamic lastStoneWeight(/* add parameters */) {
+  /// Solution method for Last Stone Weight
+  dynamic lastStoneWeight(dynamic stones) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Last Stone Weight');
-
-  // Example 1
-  // final result1 = solution.lastStoneWeight(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Last Stone Weight ===\n');
+  // --- Example 1 ---
+  final stones1 = [2,7,4,1,8,1];
+  final result1 = solution.lastStoneWeight(stones1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  1\n');
+  // --- Example 2 ---
+  final stones2 = [1];
+  final result2 = solution.lastStoneWeight(stones2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  1\n');
 }
 
 /*

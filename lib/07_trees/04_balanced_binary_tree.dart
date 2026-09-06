@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Balanced Binary Tree
-  dynamic balancedBinaryTree(/* add parameters */) {
+  /// Solution method for Balanced Binary Tree
+  dynamic balancedBinaryTree(dynamic root) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Balanced Binary Tree');
-
-  // Example 1
-  // final result1 = solution.balancedBinaryTree(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Balanced Binary Tree ===\n');
+  // --- Example 1 ---
+  final root1 = [3,9,20,null,null,15,7];
+  final result1 = solution.balancedBinaryTree(root1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final root2 = [1,2,2,3,3,null,null,4,4];
+  final result2 = solution.balancedBinaryTree(root2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
+  // --- Example 3 ---
+  final root3 = [];
+  final result3 = solution.balancedBinaryTree(root3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  true\n');
 }
 
 /*

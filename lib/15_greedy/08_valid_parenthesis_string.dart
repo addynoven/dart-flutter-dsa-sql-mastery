@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Valid Parenthesis String
-  dynamic validParenthesisString(/* add parameters */) {
+  /// Solution method for Valid Parenthesis String
+  dynamic validParenthesisString(dynamic s) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Valid Parenthesis String');
-
-  // Example 1
-  // final result1 = solution.validParenthesisString(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Valid Parenthesis String ===\n');
+  // --- Example 1 ---
+  final s1 = "()";
+  final result1 = solution.validParenthesisString(s1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final s2 = "(*)";
+  final result2 = solution.validParenthesisString(s2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  true\n');
+  // --- Example 3 ---
+  final s3 = "(*))";
+  final result3 = solution.validParenthesisString(s3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  true\n');
 }
 
 /*

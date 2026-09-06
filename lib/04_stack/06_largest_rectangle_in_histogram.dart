@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Largest Rectangle In Histogram
-  dynamic largestRectangleInHistogram(/* add parameters */) {
+  /// Solution method for Largest Rectangle In Histogram
+  dynamic largestRectangleInHistogram(dynamic heights) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Largest Rectangle In Histogram');
-
-  // Example 1
-  // final result1 = solution.largestRectangleInHistogram(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Largest Rectangle In Histogram ===\n');
+  // --- Example 1 ---
+  final heights1 = [2,1,5,6,2,3];
+  final result1 = solution.largestRectangleInHistogram(heights1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  10\n');
+  // --- Example 2 ---
+  final heights2 = [2,4];
+  final result2 = solution.largestRectangleInHistogram(heights2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  4\n');
 }
 
 /*

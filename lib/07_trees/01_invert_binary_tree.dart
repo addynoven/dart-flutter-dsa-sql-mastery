@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Invert Binary Tree
-  dynamic invertBinaryTree(/* add parameters */) {
+  /// Solution method for Invert Binary Tree
+  dynamic invertBinaryTree(dynamic root) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Invert Binary Tree');
-
-  // Example 1
-  // final result1 = solution.invertBinaryTree(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Invert Binary Tree ===\n');
+  // --- Example 1 ---
+  final root1 = [4,2,7,1,3,6,9];
+  final result1 = solution.invertBinaryTree(root1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [4,7,2,9,6,3,1]\n');
+  // --- Example 2 ---
+  final root2 = [2,1,3];
+  final result2 = solution.invertBinaryTree(root2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [2,3,1]\n');
+  // --- Example 3 ---
+  final root3 = [];
+  final result3 = solution.invertBinaryTree(root3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  []\n');
 }
 
 /*

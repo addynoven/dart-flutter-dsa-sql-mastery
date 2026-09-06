@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Happy Number
-  dynamic happyNumber(/* add parameters */) {
+  /// Solution method for Happy Number
+  dynamic happyNumber(dynamic n) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Happy Number');
-
-  // Example 1
-  // final result1 = solution.happyNumber(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Happy Number ===\n');
+  // --- Example 1 ---
+  final n1 = 19;
+  final result1 = solution.happyNumber(n1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final n2 = 2;
+  final result2 = solution.happyNumber(n2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
 }
 
 /*

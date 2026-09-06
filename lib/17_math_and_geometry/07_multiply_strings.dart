@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Multiply Strings
-  dynamic multiplyStrings(/* add parameters */) {
+  /// Solution method for Multiply Strings
+  dynamic multiplyStrings(dynamic num1, dynamic num2) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Multiply Strings');
-
-  // Example 1
-  // final result1 = solution.multiplyStrings(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Multiply Strings ===\n');
+  // --- Example 1 ---
+  final num11 = "2";
+  final num21 = "3";
+  final result1 = solution.multiplyStrings(num11, num21);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  "6"\n');
+  // --- Example 2 ---
+  final num12 = "123";
+  final num22 = "456";
+  final result2 = solution.multiplyStrings(num12, num22);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  "56088"\n');
 }
 
 /*

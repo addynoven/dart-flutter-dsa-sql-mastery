@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,37 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Network Delay Time
-  dynamic networkDelayTime(/* add parameters */) {
+  /// Solution method for Network Delay Time
+  dynamic networkDelayTime(dynamic times, dynamic n, dynamic k) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Network Delay Time');
-
-  // Example 1
-  // final result1 = solution.networkDelayTime(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Network Delay Time ===\n');
+  // --- Example 1 ---
+  final times1 = [[2,1,1],[2,3,1],[3,4,1]];
+  final n1 = 4;
+  final k1 = 2;
+  final result1 = solution.networkDelayTime(times1, n1, k1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  2\n');
+  // --- Example 2 ---
+  final times2 = [[1,2,1]];
+  final n2 = 2;
+  final k2 = 1;
+  final result2 = solution.networkDelayTime(times2, n2, k2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  1\n');
+  // --- Example 3 ---
+  final times3 = [[1,2,1]];
+  final n3 = 2;
+  final k3 = 2;
+  final result3 = solution.networkDelayTime(times3, n3, k3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  -1\n');
 }
 
 /*

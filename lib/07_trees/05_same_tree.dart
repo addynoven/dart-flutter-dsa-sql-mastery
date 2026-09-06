@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Same Tree
-  dynamic sameTree(/* add parameters */) {
+  /// Solution method for Same Tree
+  dynamic sameTree(dynamic p, dynamic q) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Same Tree');
-
-  // Example 1
-  // final result1 = solution.sameTree(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Same Tree ===\n');
+  // --- Example 1 ---
+  final p1 = [1,2,3];
+  final q1 = [1,2,3];
+  final result1 = solution.sameTree(p1, q1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final p2 = [1,2];
+  final q2 = [1,null,2];
+  final result2 = solution.sameTree(p2, q2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
+  // --- Example 3 ---
+  final p3 = [1,2,1];
+  final q3 = [1,1,2];
+  final result3 = solution.sameTree(p3, q3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  false\n');
 }
 
 /*

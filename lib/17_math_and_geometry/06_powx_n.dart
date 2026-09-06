@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Pow(x, n)
-  dynamic powxN(/* add parameters */) {
+  /// Solution method for Pow(x, n)
+  dynamic powxN(dynamic x, dynamic n) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Pow(x, n)');
-
-  // Example 1
-  // final result1 = solution.powxN(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Pow(x, n) ===\n');
+  // --- Example 1 ---
+  final x1 = 2.00000;
+  final n1 = 10;
+  final result1 = solution.powxN(x1, n1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  1024.00000\n');
+  // --- Example 2 ---
+  final x2 = 2.10000;
+  final n2 = 3;
+  final result2 = solution.powxN(x2, n2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  9.26100\n');
+  // --- Example 3 ---
+  final x3 = 2.00000;
+  final n3 = -2;
+  final result3 = solution.powxN(x3, n3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  0.25000\n');
 }
 
 /*

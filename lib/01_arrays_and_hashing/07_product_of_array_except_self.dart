@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Product of Array Except Self
-  dynamic productOfArrayExceptSelf(/* add parameters */) {
+  /// Solution method for Product of Array Except Self
+  dynamic productOfArrayExceptSelf(dynamic nums) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Product of Array Except Self');
-
-  // Example 1
-  // final result1 = solution.productOfArrayExceptSelf(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Product of Array Except Self ===\n');
+  // --- Example 1 ---
+  final nums1 = [1,2,3,4];
+  final result1 = solution.productOfArrayExceptSelf(nums1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [24,12,8,6]\n');
+  // --- Example 2 ---
+  final nums2 = [-1,1,0,-3,3];
+  final result2 = solution.productOfArrayExceptSelf(nums2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [0,0,9,0,0]\n');
 }
 
 /*

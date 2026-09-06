@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,17 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Design Add And Search Words Data Structure
+  /// Solution method for Design Add And Search Words Data Structure
   dynamic designAddAndSearchWordsDataStructure(/* add parameters */) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Design Add And Search Words Data Structure');
-
-  // Example 1
-  // final result1 = solution.designAddAndSearchWordsDataStructure(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Design Add And Search Words Data Structure ===\n');
+  // TODO: Invoke solution.designAddAndSearchWordsDataStructure()
 }
 
 /*

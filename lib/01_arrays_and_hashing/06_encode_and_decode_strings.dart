@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Encode and Decode Strings
-  dynamic encodeAndDecodeStrings(/* add parameters */) {
+  /// Solution method for Encode and Decode Strings
+  dynamic encodeAndDecodeStrings(dynamic param) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Encode and Decode Strings');
-
-  // Example 1
-  // final result1 = solution.encodeAndDecodeStrings(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Encode and Decode Strings ===\n');
+  // --- Example 1 ---
+  final param1 = ["neet","code","love","you"];
+  final result1 = solution.encodeAndDecodeStrings(param1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  ["neet","code","love","you"]\n');
+  // --- Example 2 ---
+  final param2 = ["we","say",":","yes"];
+  final result2 = solution.encodeAndDecodeStrings(param2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  ["we","say",":","yes"]\n');
 }
 
 /*

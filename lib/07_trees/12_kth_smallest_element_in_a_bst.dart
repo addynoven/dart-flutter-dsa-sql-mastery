@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Kth Smallest Element In a Bst
-  dynamic kthSmallestElementInABst(/* add parameters */) {
+  /// Solution method for Kth Smallest Element In a Bst
+  dynamic kthSmallestElementInABst(dynamic root, dynamic k) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Kth Smallest Element In a Bst');
-
-  // Example 1
-  // final result1 = solution.kthSmallestElementInABst(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Kth Smallest Element In a Bst ===\n');
+  // --- Example 1 ---
+  final root1 = [3,1,4,null,2];
+  final k1 = 1;
+  final result1 = solution.kthSmallestElementInABst(root1, k1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  1\n');
+  // --- Example 2 ---
+  final root2 = [5,3,6,2,4,null,null,1];
+  final k2 = 3;
+  final result2 = solution.kthSmallestElementInABst(root2, k2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  3\n');
 }
 
 /*

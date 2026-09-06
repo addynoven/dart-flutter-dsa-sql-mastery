@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,41 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Valid Parentheses
-  dynamic validParentheses(/* add parameters */) {
+  /// Solution method for Valid Parentheses
+  dynamic validParentheses(dynamic s) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Valid Parentheses');
-
-  // Example 1
-  // final result1 = solution.validParentheses(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Valid Parentheses ===\n');
+  // --- Example 1 ---
+  final s1 = "()";
+  final result1 = solution.validParentheses(s1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final s2 = "()[]{}";
+  final result2 = solution.validParentheses(s2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  true\n');
+  // --- Example 3 ---
+  final s3 = "(]";
+  final result3 = solution.validParentheses(s3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  false\n');
+  // --- Example 4 ---
+  final s4 = "([])";
+  final result4 = solution.validParentheses(s4);
+  print('Example 4 Result: $result4');
+  print('Expected Output:  true\n');
+  // --- Example 5 ---
+  final s5 = "([)]";
+  final result5 = solution.validParentheses(s5);
+  print('Example 5 Result: $result5');
+  print('Expected Output:  false\n');
 }
 
 /*

@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Insert Interval
-  dynamic insertInterval(/* add parameters */) {
+  /// Solution method for Insert Interval
+  dynamic insertInterval(dynamic intervals, dynamic newInterval) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Insert Interval');
-
-  // Example 1
-  // final result1 = solution.insertInterval(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Insert Interval ===\n');
+  // --- Example 1 ---
+  final intervals1 = [[1,3],[6,9]];
+  final newInterval1 = [2,5];
+  final result1 = solution.insertInterval(intervals1, newInterval1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [[1,5],[6,9]]\n');
+  // --- Example 2 ---
+  final intervals2 = [[1,2],[3,5],[6,7],[8,10],[12,16]];
+  final newInterval2 = [4,8];
+  final result2 = solution.insertInterval(intervals2, newInterval2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [[1,2],[3,10],[12,16]]\n');
 }
 
 /*

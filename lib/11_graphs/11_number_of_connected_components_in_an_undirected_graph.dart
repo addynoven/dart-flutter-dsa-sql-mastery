@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Number of Connected Components In An Undirected Graph
-  dynamic numberOfConnectedComponentsInAnUndirectedGraph(/* add parameters */) {
+  /// Solution method for Number of Connected Components In An Undirected Graph
+  dynamic numberOfConnectedComponentsInAnUndirectedGraph(dynamic n, dynamic edges) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Number of Connected Components In An Undirected Graph');
-
-  // Example 1
-  // final result1 = solution.numberOfConnectedComponentsInAnUndirectedGraph(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Number of Connected Components In An Undirected Graph ===\n');
+  // --- Example 1 ---
+  final n1 = 5;
+  final edges1 = [[0,1],[1,2],[3,4]];
+  final result1 = solution.numberOfConnectedComponentsInAnUndirectedGraph(n1, edges1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  2\n');
+  // --- Example 2 ---
+  final n2 = 5;
+  final edges2 = [[0,1],[1,2],[2,3],[3,4]];
+  final result2 = solution.numberOfConnectedComponentsInAnUndirectedGraph(n2, edges2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  1\n');
 }
 
 /*

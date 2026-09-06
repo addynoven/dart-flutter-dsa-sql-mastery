@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Min Cost to Connect All Points
-  dynamic minCostToConnectAllPoints(/* add parameters */) {
+  /// Solution method for Min Cost to Connect All Points
+  dynamic minCostToConnectAllPoints(dynamic points) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Min Cost to Connect All Points');
-
-  // Example 1
-  // final result1 = solution.minCostToConnectAllPoints(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Min Cost to Connect All Points ===\n');
+  // --- Example 1 ---
+  final points1 = [[0,0],[2,2],[3,10],[5,2],[7,0]];
+  final result1 = solution.minCostToConnectAllPoints(points1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  20\n');
+  // --- Example 2 ---
+  final points2 = [[3,12],[-2,5],[-4,1]];
+  final result2 = solution.minCostToConnectAllPoints(points2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  18\n');
 }
 
 /*

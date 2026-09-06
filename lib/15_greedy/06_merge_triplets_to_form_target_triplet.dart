@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Merge Triplets to Form Target Triplet
-  dynamic mergeTripletsToFormTargetTriplet(/* add parameters */) {
+  /// Solution method for Merge Triplets to Form Target Triplet
+  dynamic mergeTripletsToFormTargetTriplet(dynamic triplets, dynamic target) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Merge Triplets to Form Target Triplet');
-
-  // Example 1
-  // final result1 = solution.mergeTripletsToFormTargetTriplet(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Merge Triplets to Form Target Triplet ===\n');
+  // --- Example 1 ---
+  final triplets1 = [[2,5,3],[1,8,4],[1,7,5]];
+  final target1 = [2,7,5];
+  final result1 = solution.mergeTripletsToFormTargetTriplet(triplets1, target1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final triplets2 = [[3,4,5],[4,5,6]];
+  final target2 = [3,2,5];
+  final result2 = solution.mergeTripletsToFormTargetTriplet(triplets2, target2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
+  // --- Example 3 ---
+  final triplets3 = [[2,5,3],[2,3,4],[1,2,5],[5,2,3]];
+  final target3 = [5,5,5];
+  final result3 = solution.mergeTripletsToFormTargetTriplet(triplets3, target3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  true\n');
 }
 
 /*

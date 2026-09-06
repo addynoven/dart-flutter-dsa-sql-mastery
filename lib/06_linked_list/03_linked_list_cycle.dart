@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Linked List Cycle
-  dynamic linkedListCycle(/* add parameters */) {
+  /// Solution method for Linked List Cycle
+  dynamic linkedListCycle(dynamic head, dynamic pos) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Linked List Cycle');
-
-  // Example 1
-  // final result1 = solution.linkedListCycle(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Linked List Cycle ===\n');
+  // --- Example 1 ---
+  final head1 = [3,2,0,-4];
+  final pos1 = 1;
+  final result1 = solution.linkedListCycle(head1, pos1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final head2 = [1,2];
+  final pos2 = 0;
+  final result2 = solution.linkedListCycle(head2, pos2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  true\n');
+  // --- Example 3 ---
+  final head3 = [1];
+  final pos3 = -1;
+  final result3 = solution.linkedListCycle(head3, pos3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  false\n');
 }
 
 /*

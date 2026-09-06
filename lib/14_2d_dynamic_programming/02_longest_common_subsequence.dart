@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Longest Common Subsequence
-  dynamic longestCommonSubsequence(/* add parameters */) {
+  /// Solution method for Longest Common Subsequence
+  dynamic longestCommonSubsequence(dynamic text1, dynamic text2) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Longest Common Subsequence');
-
-  // Example 1
-  // final result1 = solution.longestCommonSubsequence(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Longest Common Subsequence ===\n');
+  // --- Example 1 ---
+  final text11 = "abcde";
+  final text21 = "ace";
+  final result1 = solution.longestCommonSubsequence(text11, text21);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  3\n');
+  // --- Example 2 ---
+  final text12 = "abc";
+  final text22 = "abc";
+  final result2 = solution.longestCommonSubsequence(text12, text22);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  3\n');
+  // --- Example 3 ---
+  final text13 = "abc";
+  final text23 = "def";
+  final result3 = solution.longestCommonSubsequence(text13, text23);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  0\n');
 }
 
 /*

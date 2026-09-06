@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Longest Palindromic Substring
-  dynamic longestPalindromicSubstring(/* add parameters */) {
+  /// Solution method for Longest Palindromic Substring
+  dynamic longestPalindromicSubstring(dynamic s) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Longest Palindromic Substring');
-
-  // Example 1
-  // final result1 = solution.longestPalindromicSubstring(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Longest Palindromic Substring ===\n');
+  // --- Example 1 ---
+  final s1 = "babad";
+  final result1 = solution.longestPalindromicSubstring(s1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  "bab"\n');
+  // --- Example 2 ---
+  final s2 = "cbbd";
+  final result2 = solution.longestPalindromicSubstring(s2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  "bb"\n');
 }
 
 /*

@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Copy List With Random Pointer
-  dynamic copyListWithRandomPointer(/* add parameters */) {
+  /// Solution method for Copy List With Random Pointer
+  dynamic copyListWithRandomPointer(dynamic head) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Copy List With Random Pointer');
-
-  // Example 1
-  // final result1 = solution.copyListWithRandomPointer(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Copy List With Random Pointer ===\n');
+  // --- Example 1 ---
+  final head1 = [[7,null],[13,0],[11,4],[10,2],[1,0]];
+  final result1 = solution.copyListWithRandomPointer(head1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  [[7,null],[13,0],[11,4],[10,2],[1,0]]\n');
+  // --- Example 2 ---
+  final head2 = [[1,1],[2,1]];
+  final result2 = solution.copyListWithRandomPointer(head2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  [[1,1],[2,1]]\n');
+  // --- Example 3 ---
+  final head3 = [[3,null],[3,0],[3,null]];
+  final result3 = solution.copyListWithRandomPointer(head3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  [[3,null],[3,0],[3,null]]\n');
 }
 
 /*

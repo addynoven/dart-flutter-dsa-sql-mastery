@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,26 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Binary Tree Maximum Path Sum
-  dynamic binaryTreeMaximumPathSum(/* add parameters */) {
+  /// Solution method for Binary Tree Maximum Path Sum
+  dynamic binaryTreeMaximumPathSum(dynamic root) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Binary Tree Maximum Path Sum');
-
-  // Example 1
-  // final result1 = solution.binaryTreeMaximumPathSum(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Binary Tree Maximum Path Sum ===\n');
+  // --- Example 1 ---
+  final root1 = [1,2,3];
+  final result1 = solution.binaryTreeMaximumPathSum(root1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  6\n');
+  // --- Example 2 ---
+  final root2 = [-10,9,20,null,null,15,7];
+  final result2 = solution.binaryTreeMaximumPathSum(root2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  42\n');
 }
 
 /*

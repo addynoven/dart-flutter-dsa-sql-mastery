@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -20,21 +20,30 @@ class TreeNode {
   TreeNode([this.val = 0, this.left, this.right]);
 }
 
-class Solution {
-  // TODO: Implement solution for Kth Largest Element In a Stream
-  dynamic kthLargestElementInAStream(/* add parameters */) {
-    return null;
+class KthLargest {
+  KthLargest(int k, List<int> nums) {
+    // TODO: Initialize KthLargest stream
+  }
+
+  int add(int val) {
+    // TODO: Implement add method
+    return 0;
   }
 }
 
+class Solution {
+  // Provided for consistency across problem files
+}
+
 void main() {
-  final solution = Solution();
+  print('=== Testing: Kth Largest Element In a Stream ===\n');
 
-  print('Testing: Kth Largest Element In a Stream');
-
-  // Example 1
-  // final result1 = solution.kthLargestElementInAStream(/* test input */);
-  // print('Result 1: $result1');
+  final kthLargest = KthLargest(3, [4, 5, 8, 2]);
+  print('add(3): ${kthLargest.add(3)} | Expected: 4');
+  print('add(5): ${kthLargest.add(5)} | Expected: 5');
+  print('add(10): ${kthLargest.add(10)} | Expected: 5');
+  print('add(9): ${kthLargest.add(9)} | Expected: 8');
+  print('add(4): ${kthLargest.add(4)} | Expected: 8');
 }
 
 /*

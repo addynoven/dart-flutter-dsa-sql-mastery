@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,28 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Permutation In String
-  dynamic permutationInString(/* add parameters */) {
+  /// Solution method for Permutation In String
+  dynamic permutationInString(dynamic s1, dynamic s2) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Permutation In String');
-
-  // Example 1
-  // final result1 = solution.permutationInString(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Permutation In String ===\n');
+  // --- Example 1 ---
+  final s11 = "ab";
+  final s21 = "eidbaooo";
+  final result1 = solution.permutationInString(s11, s21);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final s12 = "ab";
+  final s22 = "eidboaoo";
+  final result2 = solution.permutationInString(s12, s22);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
 }
 
 /*

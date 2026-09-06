@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,34 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Regular Expression Matching
-  dynamic regularExpressionMatching(/* add parameters */) {
+  /// Solution method for Regular Expression Matching
+  dynamic regularExpressionMatching(dynamic s, dynamic p) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Regular Expression Matching');
-
-  // Example 1
-  // final result1 = solution.regularExpressionMatching(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Regular Expression Matching ===\n');
+  // --- Example 1 ---
+  final s1 = "aa";
+  final p1 = "a";
+  final result1 = solution.regularExpressionMatching(s1, p1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  false\n');
+  // --- Example 2 ---
+  final s2 = "aa";
+  final p2 = "a*";
+  final result2 = solution.regularExpressionMatching(s2, p2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  true\n');
+  // --- Example 3 ---
+  final s3 = "ab";
+  final p3 = ".*";
+  final result3 = solution.regularExpressionMatching(s3, p3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  true\n');
 }
 
 /*

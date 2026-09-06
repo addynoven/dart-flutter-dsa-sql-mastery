@@ -6,7 +6,7 @@
 import 'dart:collection';
 import 'package:collection/collection.dart';
 
-// Node structure helpers for Trees / Linked Lists if needed
+// Node structure helpers for Trees / Linked Lists
 class ListNode {
   int val;
   ListNode? next;
@@ -21,20 +21,31 @@ class TreeNode {
 }
 
 class Solution {
-  // TODO: Implement solution for Valid Palindrome
-  dynamic validPalindrome(/* add parameters */) {
+  /// Solution method for Valid Palindrome
+  dynamic validPalindrome(dynamic s) {
+    // TODO: Write your solution algorithm here
     return null;
   }
 }
 
 void main() {
   final solution = Solution();
-
-  print('Testing: Valid Palindrome');
-
-  // Example 1
-  // final result1 = solution.validPalindrome(/* test input */);
-  // print('Result 1: $result1');
+  print('=== Testing: Valid Palindrome ===\n');
+  // --- Example 1 ---
+  final s1 = "A man, a plan, a canal: Panama";
+  final result1 = solution.validPalindrome(s1);
+  print('Example 1 Result: $result1');
+  print('Expected Output:  true\n');
+  // --- Example 2 ---
+  final s2 = "race a car";
+  final result2 = solution.validPalindrome(s2);
+  print('Example 2 Result: $result2');
+  print('Expected Output:  false\n');
+  // --- Example 3 ---
+  final s3 = " ";
+  final result3 = solution.validPalindrome(s3);
+  print('Example 3 Result: $result3');
+  print('Expected Output:  true\n');
 }
 
 /*
