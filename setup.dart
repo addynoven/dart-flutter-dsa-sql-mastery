@@ -2,16 +2,23 @@ import 'dart:io';
 
 void main() async {
   print('===================================================');
-  print('🚀 Setting up Dart & Flutter DSA & SQL Mastery Workspace');
+  print('🚀 Setting up Flutter & Dart Interview Mastery Workspace');
   print('===================================================\n');
 
   // 1. Configure Sub-Packages
-  final packages = ['neetcode_150_dsa', 'dart_sql_mastery'];
+  final packages = [
+    'neetcode_150_dsa',
+    'dart_sql_mastery',
+    'flutter_architecture_mastery'
+  ];
 
   for (final pkg in packages) {
     print('📦 Fetching dependencies for $pkg...');
+    final isFlutterPkg = pkg.startsWith('flutter');
+    final cmd = isFlutterPkg ? 'flutter' : 'dart';
+
     final result = await Process.run(
-      'dart',
+      cmd,
       ['pub', 'get'],
       workingDirectory: pkg,
       runInShell: true,
@@ -69,6 +76,7 @@ void main() async {
   print('===================================================');
   print('🎉 Setup Complete! You are ready to start practicing.');
   print('===================================================');
-  print('• Run DSA Exercise: cd neetcode_150_dsa && dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart');
-  print('• Run SQL Exercise: cd dart_sql_mastery && dart run lib/part2_interview_scenarios/01_combine_two_tables.dart\n');
+  print('• Run DSA Exercise:  cd neetcode_150_dsa && dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart');
+  print('• Run SQL Exercise:  cd dart_sql_mastery && dart run lib/part2_interview_scenarios/01_combine_two_tables.dart');
+  print('• Run Arch Exercise: cd flutter_architecture_mastery && flutter run lib/part2_interview_scenarios/01_shopping_cart_bloc.dart\n');
 }
