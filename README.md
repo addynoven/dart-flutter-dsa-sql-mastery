@@ -107,3 +107,9 @@ git checkout -b practice/arrays-and-hashing
 
 # 3. Solve problems and merge back into main when done!
 ```
+
+---
+
+## 🛠️ Maintainer & Template Management Guide
+
+If you are a maintainer looking for instructions on how to update, sync, or push changes to the protected `template` branch, please read the **[Maintainer Guide (MAINTAINERS.md)](MAINTAINERS.md)**.
