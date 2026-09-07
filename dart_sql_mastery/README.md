@@ -8,8 +8,8 @@ A hands-on, interactive SQL practice suite written in **Dart**, tailored for **F
 
 - 🎯 **Raw SQL Focus**: Practice standard SQL statements (`SELECT`, `INSERT`, `UPDATE`, `JOIN`, `GROUP BY`, `HAVING`, `WINDOW FUNCTIONS`) matching Flutter's `sqflite` raw query paradigms.
 - 📊 **Visual Terminal Output**: Every query automatically formats and renders as a clean visual Unicode table in your Linux terminal.
-- 🗂️ **Part 1: Topic-Wise Foundational Mastery**: 5 modules covering DDL, CRUD, Filtering, Joins, Aggregations, Transactions, Indexing, and Schema Migrations.
-- 🧩 **Part 2: LeetCode & Interview Scenarios**: Hands-on scenario questions (*Second Highest Salary*, *Combine Two Tables*, *Customers Who Never Order*, *Department Highest Salary*, *Consecutive Numbers*, *Tree Node*, etc.) pre-seeded with SQLite tables and test runners.
+- 🗂️ **Part 1: Topic-Wise Foundational Mastery**: 20 topic lessons across 5 modules covering DDL, CRUD, Filtering, Joins, Aggregations, Transactions, Indexing, and Schema Migrations.
+- 🧩 **Part 2: LeetCode & Interview Scenarios**: 106 scenario-based questions from LeetCode (#175, #176, #178, #180, #181, #182, #183, #184, #262, #584, #595, #608, #1393, and 90+ more!) pre-seeded with SQLite tables, problem statements, and visual test runners.
 
 ---
 
