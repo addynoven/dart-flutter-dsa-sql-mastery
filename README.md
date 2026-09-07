@@ -1,6 +1,6 @@
 # 🚀 Mobile Developer Interview Mastery in Dart & Flutter
 
-A comprehensive, production-ready interview preparation workspace in **Dart & Flutter**, containing complete practice suites for **Data Structures & Algorithms**, **SQLite & Raw SQL Database Mastery**, **Flutter State Management & Clean Architecture**, **Dart Concurrency & Isolates**, **Flutter Networking & Offline Sync**, and **Flutter Testing & TDD**.
+A comprehensive, production-ready interview preparation workspace in **Dart & Flutter**, containing complete practice suites for **Data Structures & Algorithms**, **SQLite & Raw SQL Database Mastery**, **Flutter State Management & Clean Architecture**, **Dart Concurrency & Isolates**, **Flutter Networking & Offline Sync**, **Flutter Testing & TDD**, and **Flutter Rendering Pipeline, CustomPainters & Animations**.
 
 ---
 
@@ -23,7 +23,7 @@ That's it! All package dependencies across all tracks are fetched automatically.
 
 ---
 
-## 🗂️ Workspace Architecture
+## 🗂️ Workspace Architecture (7 Tracks)
 
 ```text
 /home/neon/programs/DSA/
@@ -56,10 +56,15 @@ That's it! All package dependencies across all tracks are fetched automatically.
 │   ├── todo_networking.md                 # Interactive Progress Checklist
 │   └── lib/                               # HTTP/Dio, Interceptors, 401 Refresh, & Offline Sync
 │
-└── flutter_testing_harness/               # TRACK 6: FLUTTER TESTING, TDD & MOCKTAIL (15 Exercises)
-    ├── README.md                          # Testing & TDD Cheat Sheet
-    ├── todo_testing.md                    # Interactive Progress Checklist
-    └── lib/                               # Unit Tests, Mocktail Mocks, Widget Tests & Gestures
+├── flutter_testing_harness/               # TRACK 6: FLUTTER TESTING, TDD & MOCKTAIL (15 Exercises)
+│   ├── README.md                          # Testing & TDD Cheat Sheet
+│   ├── todo_testing.md                    # Interactive Progress Checklist
+│   └── lib/                               # Unit Tests, Mocktail Mocks, Widget Tests & Gestures
+│
+└── flutter_rendering_graphics/            # TRACK 7: CUSTOM PAINTERS, CANVAS & ANIMATIONS (15 Exercises)
+    ├── README.md                          # Graphics & Animations Cheat Sheet
+    ├── todo_graphics.md                   # Interactive Progress Checklist
+    └── lib/                               # 3-Tree Pipeline, Canvas, CustomPainters, & Matrix4
 ```
 
 ---
@@ -135,6 +140,18 @@ That's it! All package dependencies across all tracks are fetched automatically.
 
 ---
 
+## 🎨 Track 7: Flutter Rendering Pipeline, CustomPainters & Animations
+- 🎯 **15 Graphics & Animation Exercises** (5 Topic Lessons + 10 Real-World Custom Graphics Scenarios).
+- 🎨 **Canvas & CustomPainters**: Draw interactive donut charts, smooth line charts with crosshairs, particle explosions, signature pads, and 3D Matrix4 card flips.
+- 📋 **[View Graphics Checklist (todo_graphics.md)](flutter_rendering_graphics/todo_graphics.md)**
+- 🚀 **How to Run**:
+  ```bash
+  cd flutter_rendering_graphics
+  flutter run -d linux lib/part2_interview_scenarios/01_custom_pie_chart.dart
+  ```
+
+---
+
 ## 🌿 Git Branching Strategy
 
 - 🧊 **`template` Branch**: Frozen starter template containing clean problem stubs, full question descriptions, and pre-wired test runners.
@@ -146,7 +163,7 @@ That's it! All package dependencies across all tracks are fetched automatically.
 git checkout template
 
 # 2. Create a new practice branch
-git checkout -b practice/shopping-cart-bloc-test
+git checkout -b practice/custom-pie-chart
 
 # 3. Solve problems and merge back into main when done!
 ```

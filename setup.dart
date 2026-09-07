@@ -13,6 +13,7 @@ void main() async {
     'dart_concurrency_isolates',
     'flutter_networking_sync',
     'flutter_testing_harness',
+    'flutter_rendering_graphics',
   ];
 
   for (final pkg in packages) {
@@ -84,5 +85,6 @@ void main() async {
   print('• Run Arch Exercise:       cd flutter_architecture_mastery && flutter run lib/part2_interview_scenarios/01_shopping_cart_bloc.dart');
   print('• Run Concurrency:         cd dart_concurrency_isolates && dart run lib/part2_interview_scenarios/01_heavy_json_parsing_isolate.dart');
   print('• Run Networking Exercise: cd flutter_networking_sync && flutter run lib/part2_interview_scenarios/01_jwt_auth_interceptor_flow.dart');
-  print('• Run Testing Suite:       cd flutter_testing_harness && flutter test\n');
+  print('• Run Testing Suite:       cd flutter_testing_harness && flutter test');
+  print('• Run Graphics App:        cd flutter_rendering_graphics && flutter run -d linux lib/part2_interview_scenarios/01_custom_pie_chart.dart\n');
 }
