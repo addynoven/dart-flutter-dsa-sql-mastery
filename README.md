@@ -4,6 +4,25 @@ A comprehensive, production-ready interview preparation workspace in **Dart**, c
 
 ---
 
+## ⚡ Quick 1-Step Zero-Config Setup (Windows, macOS, Linux)
+
+No Docker or database installation required! Since SQLite is embedded directly into Dart via FFI, anyone can set up and run this entire repository on any PC in seconds:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/addynoven/dart-flutter-dsa-sql-mastery.git
+   cd dart-flutter-dsa-sql-mastery
+   ```
+
+2. **Run the 1-Step Setup Script**:
+   ```bash
+   dart run setup.dart
+   ```
+
+That's it! All package dependencies across both suites are fetched automatically.
+
+---
+
 ## 🗂️ Workspace Architecture
 
 ```text
