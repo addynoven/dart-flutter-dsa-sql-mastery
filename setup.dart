@@ -2,39 +2,22 @@ import 'dart:io';
 
 void main() async {
   print('===================================================');
-  print('🚀 Setting up Flutter & Dart Interview Mastery Workspace');
+  print('🚀 Setting up Mobile Developer Interview Mastery Workspace');
   print('===================================================\n');
 
-  // 1. Configure Sub-Packages (Tracks 0 to 7)
-  final packages = [
-    '00_flutter_ui_playground',
-    '01_neetcode_150_dsa',
-    '02_dart_sql_mastery',
-    '03_flutter_architecture_mastery',
-    '04_dart_concurrency_isolates',
-    '05_flutter_networking_sync',
-    '06_flutter_testing_harness',
-    '07_flutter_rendering_graphics',
-  ];
+  // 1. Single Unified Dependency Fetch
+  print('📦 Fetching workspace dependencies (Single Root Pubspec)...');
+  final result = await Process.run(
+    'flutter',
+    ['pub', 'get'],
+    runInShell: true,
+  );
 
-  for (final pkg in packages) {
-    print('📦 Fetching dependencies for $pkg...');
-    final isFlutterPkg = pkg.contains('flutter');
-    final cmd = isFlutterPkg ? 'flutter' : 'dart';
-
-    final result = await Process.run(
-      cmd,
-      ['pub', 'get'],
-      workingDirectory: pkg,
-      runInShell: true,
-    );
-
-    if (result.exitCode == 0) {
-      print('✅ Successfully configured $pkg\n');
-    } else {
-      print('❌ Failed to configure $pkg:');
-      print(result.stderr);
-    }
+  if (result.exitCode == 0) {
+    print('✅ Successfully configured workspace dependencies!\n');
+  } else {
+    print('❌ Failed to configure workspace dependencies:');
+    print(result.stderr);
   }
 
   // 2. Git Branch Protection & Practice Branch Creation
@@ -81,12 +64,8 @@ void main() async {
   print('===================================================');
   print('🎉 Setup Complete! You are ready to start practicing.');
   print('===================================================');
-  print('• Run UI Playground:       cd 00_flutter_ui_playground && flutter run -d linux lib/main.dart');
-  print('• Run DSA Exercise:        cd 01_neetcode_150_dsa && dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart');
-  print('• Run SQL Exercise:        cd 02_dart_sql_mastery && dart run lib/part2_interview_scenarios/01_combine_two_tables.dart');
-  print('• Run Arch Exercise:       cd 03_flutter_architecture_mastery && flutter run lib/part2_interview_scenarios/01_shopping_cart_bloc.dart');
-  print('• Run Concurrency:         cd 04_dart_concurrency_isolates && dart run lib/part2_interview_scenarios/01_heavy_json_parsing_isolate.dart');
-  print('• Run Networking Exercise: cd 05_flutter_networking_sync && flutter run lib/part2_interview_scenarios/01_jwt_auth_interceptor_flow.dart');
-  print('• Run Testing Suite:       cd 06_flutter_testing_harness && flutter test');
-  print('• Run Graphics App:        cd 07_flutter_rendering_graphics && flutter run -d linux lib/part2_interview_scenarios/01_custom_pie_chart.dart\n');
+  print('• Run Master UI App:        flutter run -d linux lib/main.dart');
+  print('• Run All Test Suites:     flutter test');
+  print('• Run DSA Exercise:        dart run lib/01_neetcode_150_dsa/lib/01_arrays_and_hashing/01_contains_duplicate.dart');
+  print('• Run SQL Exercise:        dart run lib/02_dart_sql_mastery/lib/part2_interview_scenarios/01_combine_two_tables.dart\n');
 }

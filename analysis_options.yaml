@@ -1,0 +1,29 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    file_names: ignore
+    dangling_library_doc_comments: ignore
+    avoid_print: ignore
+    prefer_const_constructors: ignore
+    prefer_const_literals_to_create_immutables: ignore
+    prefer_const_declarations: ignore
+    unnecessary_underscores: ignore
+    avoid_relative_lib_imports: ignore
+    depend_on_referenced_packages: ignore
+    unused_import: ignore
+    prefer_interpolation_to_compose_strings: ignore
+    constant_identifier_names: ignore
+    unused_local_variable: ignore
+
+linter:
+  rules:
+    avoid_print: false
+    file_names: false
+    dangling_library_doc_comments: false
+    prefer_const_constructors: false
+    prefer_const_literals_to_create_immutables: false
+    prefer_const_declarations: false
+    unnecessary_underscores: false
+    avoid_relative_lib_imports: false
+    depend_on_referenced_packages: false

@@ -1,12 +1,12 @@
 # 🚀 Mobile Developer Interview Mastery in Dart & Flutter
 
-A comprehensive, production-ready interview preparation workspace in **Dart & Flutter**, containing complete practice suites for **Flutter UI Essentials**, **Data Structures & Algorithms**, **SQLite & Raw SQL Database Mastery**, **Flutter State Management & Clean Architecture**, **Dart Concurrency & Isolates**, **Flutter Networking & Offline Sync**, **Flutter Testing & TDD**, and **Flutter Rendering Pipeline, CustomPainters & Animations**.
+A comprehensive, production-grade interview preparation workspace in **Dart & Flutter**, featuring a **Single Unified Dependency Architecture** and an interactive **Master App Launcher Dashboard (`lib/main.dart`)** covering **Flutter UI Essentials**, **Data Structures & Algorithms**, **SQLite & Raw SQL Database Mastery**, **Flutter State Management & Clean Architecture**, **Dart Concurrency & Isolates**, **Flutter Networking & Offline Sync**, **Flutter Testing & TDD**, and **Flutter Rendering Pipeline, CustomPainters & Animations**.
 
 ---
 
 ## ⚡ Quick 1-Step Zero-Config Setup (Windows, macOS, Linux)
 
-No Docker or database installation required! Anyone can set up and run this entire workspace on any PC in seconds:
+No Docker or database installation required! Single dependency configuration across the entire repository:
 
 1. **Clone the repository**:
    ```bash
@@ -17,59 +17,36 @@ No Docker or database installation required! Anyone can set up and run this enti
 2. **Run the 1-Step Setup Script**:
    ```bash
    dart run setup.dart
+   # OR: flutter pub get
    ```
 
-That's it! All package dependencies across all tracks are fetched automatically.
+3. **Launch the Master Interactive Dashboard App**:
+   ```bash
+   flutter run -d linux lib/main.dart
+   ```
 
 ---
 
-## 🗂️ Workspace Architecture (8 Sequenced Tracks)
+## 🗂️ Unified Single-App Architecture (8 Tracks under `lib/`)
 
 ```text
 /home/neon/programs/DSA/
+├── pubspec.yaml                           # ONE Master Pubspec with ALL dependencies
 ├── README.md                              # Master Workspace Portal
-├── setup.dart                             # 1-Command Setup Script
-├── pubspec.yaml                           # Workspace Pubspec
+├── setup.dart                             # 1-Command Workspace Installer
+├── analysis_options.yaml                  # Global Linter Rules
 │
-├── 00_flutter_ui_playground/              # TRACK 0: FLUTTER UI PLAYGROUND & ESSENTIALS (11 UI Apps, Easy->Hard)
-│   ├── README.md                          # UI Building Blocks Cheat Sheet
-│   ├── todo_playground.md                 # Interactive Progress Checklist
-│   └── lib/                               # 11 UI Apps (Counter, Calculator, Neumorphism, etc.)
-│
-├── 01_neetcode_150_dsa/                   # TRACK 1: DATA STRUCTURES & ALGORITHMS (150 Problems)
-│   ├── README.md                          # DSA Cheat Sheet & Topic Breakdown
-│   ├── todo_list.md                       # Interactive 150-Problem Progress Checklist
-│   └── lib/                               # 18 Topic Categories (150 Dart Problem Files)
-│
-├── 02_dart_sql_mastery/                   # TRACK 2: SQLITE & RAW SQL MASTERY (126 Exercises)
-│   ├── README.md                          # SQL & sqflite Cheat Sheet
-│   ├── todo_sql.md                        # Interactive 126-Exercise Progress Checklist
-│   └── lib/                               # 20 Topic Lessons + 106 LeetCode SQL Scenarios
-│
-├── 03_flutter_architecture_mastery/       # TRACK 3: STATE MANAGEMENT & CLEAN ARCHITECTURE (16 Exercises)
-│   ├── README.md                          # State Management & Architecture Cheat Sheet
-│   ├── todo_arch.md                       # Interactive Progress Checklist
-│   └── lib/                               # Cubit, BLoC, Riverpod, Provider & Clean Arch Scenarios
-│
-├── 04_dart_concurrency_isolates/         # TRACK 4: DART EVENT LOOP & ISOLATES MULTITHREADING (15 Exercises)
-│   ├── README.md                          # Concurrency & Isolates Cheat Sheet
-│   ├── todo_concurrency.md                # Interactive Progress Checklist
-│   └── lib/                               # Event Loop, Microtasks, Streams, & Background Isolates
-│
-├── 05_flutter_networking_sync/            # TRACK 5: NETWORKING, INTERCEPTORS & OFFLINE SYNC (15 Exercises)
-│   ├── README.md                          # Networking & Sync Cheat Sheet
-│   ├── todo_networking.md                 # Interactive Progress Checklist
-│   └── lib/                               # HTTP/Dio, Interceptors, 401 Refresh, & Offline Sync
-│
-├── 06_flutter_testing_harness/            # TRACK 6: FLUTTER TESTING, TDD & MOCKTAIL (15 Exercises)
-│   ├── README.md                          # Testing & TDD Cheat Sheet
-│   ├── todo_testing.md                    # Interactive Progress Checklist
-│   └── lib/                               # Unit Tests, Mocktail Mocks, Widget Tests & Gestures
-│
-└── 07_flutter_rendering_graphics/         # TRACK 7: CUSTOM PAINTERS, CANVAS & ANIMATIONS (15 Exercises)
-    ├── README.md                          # Graphics & Animations Cheat Sheet
-    ├── todo_graphics.md                   # Interactive Progress Checklist
-    └── lib/                               # 3-Tree Pipeline, Canvas, CustomPainters, & Matrix4
+└── lib/                                   # Central lib/ Directory
+    ├── main.dart                          # Master App Launcher Dashboard (Launches All Tracks)
+    │
+    ├── 00_flutter_ui_playground/          # TRACK 0: 11 Essential UI Apps (Easy -> Hard)
+    ├── 01_neetcode_150_dsa/               # TRACK 1: 150 DSA Dart Problems
+    ├── 02_dart_sql_mastery/               # TRACK 2: 126 SQLite Exercises & Visual Renderer
+    ├── 03_flutter_architecture_mastery/   # TRACK 3: 16 State Management & Clean Arch Apps
+    ├── 04_dart_concurrency_isolates/     # TRACK 4: 15 Concurrency & Isolate Exercises
+    ├── 05_flutter_networking_sync/        # TRACK 5: 15 Dio Interceptor & Offline Sync Apps
+    ├── 06_flutter_testing_harness/        # TRACK 6: 15 Unit, Widget & TDD Test Suites
+    └── 07_flutter_rendering_graphics/     # TRACK 7: 15 CustomPainter & Canvas Graphics Apps
 ```
 
 ---
@@ -77,34 +54,27 @@ That's it! All package dependencies across all tracks are fetched automatically.
 ## 📱 Track 0: Flutter UI Playground & Essentials
 - 🎯 **11 Essential Flutter UI Apps** ordered from Easy to Hard.
 - 🎨 **Level 1 to Level 3**: Counter, Background Color, Random Colors, Pass Message, Random Quotes, Testimonials, Modal Dialogs, Filterable List, Image Carousel, Calculator, and Neumorphism UI.
-- 📋 **[View Playground Checklist (todo_playground.md)](00_flutter_ui_playground/todo_playground.md)**
-- 🚀 **How to Run**:
-  ```bash
-  cd 00_flutter_ui_playground
-  flutter run -d linux lib/main.dart
-  ```
+- 📋 **[View Playground Checklist](lib/00_flutter_ui_playground/todo_playground.md)**
 
 ---
 
 ## ⚡ Track 1: NeetCode 150 Data Structures & Algorithms
 - 🎯 **150 Coding Problems** covering all core DSA categories.
-- 📋 **[View DSA Checklist (todo_list.md)](01_neetcode_150_dsa/todo_list.md)**
+- 📋 **[View DSA Checklist](lib/01_neetcode_150_dsa/todo_list.md)**
 - 🚀 **How to Run**:
   ```bash
-  cd 01_neetcode_150_dsa
-  dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart
+  dart run lib/01_neetcode_150_dsa/lib/01_arrays_and_hashing/01_contains_duplicate.dart
   ```
 
 ---
 
 ## 🗄️ Track 2: Dart & Flutter SQLite & Raw SQL Mastery
 - 🎯 **126 Total SQL Exercises** (20 Topic Lessons + 106 LeetCode Scenario Questions).
-- 📊 **Visual Terminal Tables**: Every query renders as a visual Unicode table in your Linux terminal.
-- 📋 **[View SQL Checklist (todo_sql.md)](02_dart_sql_mastery/todo_sql.md)**
+- 📊 **Visual Terminal Tables**: Every query renders as a visual Unicode table in your terminal.
+- 📋 **[View SQL Checklist](lib/02_dart_sql_mastery/todo_sql.md)**
 - 🚀 **How to Run**:
   ```bash
-  cd 02_dart_sql_mastery
-  dart run lib/part2_interview_scenarios/01_combine_two_tables.dart
+  dart run lib/02_dart_sql_mastery/lib/part2_interview_scenarios/01_combine_two_tables.dart
   ```
 
 ---
@@ -112,23 +82,17 @@ That's it! All package dependencies across all tracks are fetched automatically.
 ## 📱 Track 3: Flutter State Management & Clean Architecture
 - 🎯 **16 Total Interactive Flutter Exercises** (6 Topic Lessons + 10 Real-World Interview Scenario Apps).
 - 🎨 **Flutter UI Widgets**: Interactive Material UI widgets (`flutter_bloc`, `flutter_riverpod`, `provider`).
-- 📋 **[View Architecture Checklist (todo_arch.md)](03_flutter_architecture_mastery/todo_arch.md)**
-- 🚀 **How to Run**:
-  ```bash
-  cd 03_flutter_architecture_mastery
-  flutter run lib/part2_interview_scenarios/01_shopping_cart_bloc.dart
-  ```
+- 📋 **[View Architecture Checklist](lib/03_flutter_architecture_mastery/todo_arch.md)**
 
 ---
 
 ## ⚡ Track 4: Dart Concurrency, Event Loop & Isolates
 - 🎯 **15 Concurrency Exercises** (5 Topic Lessons + 10 Real-World Multithreading Scenarios).
 - ⚡ **Zero UI Jank**: Offload 50MB JSON parsing, image compression, and crypto hashing to background Isolates (`Isolate.run()`, `ReceivePort`/`SendPort`).
-- 📋 **[View Concurrency Checklist (todo_concurrency.md)](04_dart_concurrency_isolates/todo_concurrency.md)**
+- 📋 **[View Concurrency Checklist](lib/04_dart_concurrency_isolates/todo_concurrency.md)**
 - 🚀 **How to Run**:
   ```bash
-  cd 04_dart_concurrency_isolates
-  dart run lib/part2_interview_scenarios/01_heavy_json_parsing_isolate.dart
+  dart run lib/04_dart_concurrency_isolates/lib/part2_interview_scenarios/01_heavy_json_parsing_isolate.dart
   ```
 
 ---
@@ -136,22 +100,16 @@ That's it! All package dependencies across all tracks are fetched automatically.
 ## 🌐 Track 5: Flutter Networking, Interceptors & Offline Sync
 - 🎯 **15 Networking & Sync Exercises** (5 Topic Lessons + 10 Real-World Interview Scenarios).
 - 🔒 **401 JWT Refresh & Offline Sync**: Automated token refresh rotation, queued offline mutations, and paginated REST API feeds.
-- 📋 **[View Networking Checklist (todo_networking.md)](05_flutter_networking_sync/todo_networking.md)**
-- 🚀 **How to Run**:
-  ```bash
-  cd 05_flutter_networking_sync
-  flutter run lib/part2_interview_scenarios/01_jwt_auth_interceptor_flow.dart
-  ```
+- 📋 **[View Networking Checklist](lib/05_flutter_networking_sync/todo_networking.md)**
 
 ---
 
 ## 🧪 Track 6: Flutter Testing, TDD & Mocktail
 - 🎯 **15 Testing Exercises** (5 Topic Lessons + 10 Real-World Testing Scenarios).
 - 🧪 **Unit & Widget Testing**: Test functions, mock repositories with `mocktail`, test BLoCs with `blocTest`, and test UI gestures with `WidgetTester`.
-- 📋 **[View Testing Checklist (todo_testing.md)](06_flutter_testing_harness/todo_testing.md)**
+- 📋 **[View Testing Checklist](lib/06_flutter_testing_harness/todo_testing.md)**
 - 🚀 **How to Run**:
   ```bash
-  cd 06_flutter_testing_harness
   flutter test
   ```
 
@@ -160,12 +118,7 @@ That's it! All package dependencies across all tracks are fetched automatically.
 ## 🎨 Track 7: Flutter Rendering Pipeline, CustomPainters & Animations
 - 🎯 **15 Graphics & Animation Exercises** (5 Topic Lessons + 10 Real-World Custom Graphics Scenarios).
 - 🎨 **Canvas & CustomPainters**: Draw interactive donut charts, smooth line charts with crosshairs, particle explosions, signature pads, and 3D Matrix4 card flips.
-- 📋 **[View Graphics Checklist (todo_graphics.md)](07_flutter_rendering_graphics/todo_graphics.md)**
-- 🚀 **How to Run**:
-  ```bash
-  cd 07_flutter_rendering_graphics
-  flutter run -d linux lib/part2_interview_scenarios/01_custom_pie_chart.dart
-  ```
+- 📋 **[View Graphics Checklist](lib/07_flutter_rendering_graphics/todo_graphics.md)**
 
 ---
 
@@ -180,7 +133,7 @@ That's it! All package dependencies across all tracks are fetched automatically.
 git checkout template
 
 # 2. Create a new practice branch
-git checkout -b practice/counter-ui
+git checkout -b practice/shopping-cart-bloc
 
 # 3. Solve problems and merge back into main when done!
 ```
