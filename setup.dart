@@ -11,6 +11,7 @@ void main() async {
     'dart_sql_mastery',
     'flutter_architecture_mastery',
     'dart_concurrency_isolates',
+    'flutter_networking_sync',
   ];
 
   for (final pkg in packages) {
@@ -77,8 +78,9 @@ void main() async {
   print('===================================================');
   print('🎉 Setup Complete! You are ready to start practicing.');
   print('===================================================');
-  print('• Run DSA Exercise:         cd neetcode_150_dsa && dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart');
-  print('• Run SQL Exercise:         cd dart_sql_mastery && dart run lib/part2_interview_scenarios/01_combine_two_tables.dart');
-  print('• Run Arch Exercise:        cd flutter_architecture_mastery && flutter run lib/part2_interview_scenarios/01_shopping_cart_bloc.dart');
-  print('• Run Concurrency Exercise: cd dart_concurrency_isolates && dart run lib/part2_interview_scenarios/01_heavy_json_parsing_isolate.dart\n');
+  print('• Run DSA Exercise:        cd neetcode_150_dsa && dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart');
+  print('• Run SQL Exercise:        cd dart_sql_mastery && dart run lib/part2_interview_scenarios/01_combine_two_tables.dart');
+  print('• Run Arch Exercise:       cd flutter_architecture_mastery && flutter run lib/part2_interview_scenarios/01_shopping_cart_bloc.dart');
+  print('• Run Concurrency:         cd dart_concurrency_isolates && dart run lib/part2_interview_scenarios/01_heavy_json_parsing_isolate.dart');
+  print('• Run Networking Exercise: cd flutter_networking_sync && flutter run lib/part2_interview_scenarios/01_jwt_auth_interceptor_flow.dart\n');
 }

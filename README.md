@@ -1,6 +1,6 @@
 # 🚀 Mobile Developer Interview Mastery in Dart & Flutter
 
-A comprehensive, production-ready interview preparation workspace in **Dart & Flutter**, containing complete practice suites for **Data Structures & Algorithms**, **SQLite & Raw SQL Database Mastery**, **Flutter State Management & Clean Architecture**, and **Dart Concurrency & Isolates**.
+A comprehensive, production-ready interview preparation workspace in **Dart & Flutter**, containing complete practice suites for **Data Structures & Algorithms**, **SQLite & Raw SQL Database Mastery**, **Flutter State Management & Clean Architecture**, **Dart Concurrency & Isolates**, and **Flutter Networking, Interceptors & Offline Sync**.
 
 ---
 
@@ -46,10 +46,15 @@ That's it! All package dependencies across all tracks are fetched automatically.
 │   ├── todo_arch.md                       # Interactive Progress Checklist
 │   └── lib/                               # Cubit, BLoC, Riverpod, Provider & Clean Arch Scenarios
 │
-└── dart_concurrency_isolates/            # TRACK 4: DART EVENT LOOP & ISOLATES MULTITHREADING (15 Exercises)
-    ├── README.md                          # Concurrency & Isolates Cheat Sheet
-    ├── todo_concurrency.md                # Interactive Progress Checklist
-    └── lib/                               # Event Loop, Microtasks, Streams, & Background Isolates
+├── dart_concurrency_isolates/            # TRACK 4: DART EVENT LOOP & ISOLATES MULTITHREADING (15 Exercises)
+│   ├── README.md                          # Concurrency & Isolates Cheat Sheet
+│   ├── todo_concurrency.md                # Interactive Progress Checklist
+│   └── lib/                               # Event Loop, Microtasks, Streams, & Background Isolates
+│
+└── flutter_networking_sync/               # TRACK 5: NETWORKING, INTERCEPTORS & OFFLINE SYNC (15 Exercises)
+    ├── README.md                          # Networking & Sync Cheat Sheet
+    ├── todo_networking.md                 # Interactive Progress Checklist
+    └── lib/                               # HTTP/Dio, Interceptors, 401 Refresh, & Offline Sync
 ```
 
 ---
@@ -101,6 +106,18 @@ That's it! All package dependencies across all tracks are fetched automatically.
 
 ---
 
+## 🌐 Track 5: Flutter Networking, Interceptors & Offline Sync
+- 🎯 **15 Networking & Sync Exercises** (5 Topic Lessons + 10 Real-World Interview Scenarios).
+- 🔒 **401 JWT Refresh & Offline Sync**: Automated token refresh rotation, queued offline mutations, and paginated REST API feeds.
+- 📋 **[View Networking Checklist (todo_networking.md)](flutter_networking_sync/todo_networking.md)**
+- 🚀 **How to Run**:
+  ```bash
+  cd flutter_networking_sync
+  flutter run lib/part2_interview_scenarios/01_jwt_auth_interceptor_flow.dart
+  ```
+
+---
+
 ## 🌿 Git Branching Strategy
 
 - 🧊 **`template` Branch**: Frozen starter template containing clean problem stubs, full question descriptions, and pre-wired test runners.
@@ -112,7 +129,7 @@ That's it! All package dependencies across all tracks are fetched automatically.
 git checkout template
 
 # 2. Create a new practice branch
-git checkout -b practice/heavy-json-isolate
+git checkout -b practice/jwt-auth-interceptor
 
 # 3. Solve problems and merge back into main when done!
 ```

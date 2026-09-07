@@ -1,0 +1,13 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    file_names: ignore
+    dangling_library_doc_comments: ignore
+    avoid_print: ignore
+
+linter:
+  rules:
+    avoid_print: false
+    file_names: false
+    dangling_library_doc_comments: false
