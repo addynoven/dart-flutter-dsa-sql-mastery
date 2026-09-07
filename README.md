@@ -1,6 +1,6 @@
 # 🚀 Mobile Developer Interview Mastery in Dart & Flutter
 
-A comprehensive, production-ready interview preparation workspace in **Dart & Flutter**, containing complete practice suites for **Data Structures & Algorithms**, **SQLite & Raw SQL Database Mastery**, **Flutter State Management & Clean Architecture**, **Dart Concurrency & Isolates**, **Flutter Networking & Offline Sync**, **Flutter Testing & TDD**, and **Flutter Rendering Pipeline, CustomPainters & Animations**.
+A comprehensive, production-ready interview preparation workspace in **Dart & Flutter**, containing complete practice suites for **Flutter UI Essentials**, **Data Structures & Algorithms**, **SQLite & Raw SQL Database Mastery**, **Flutter State Management & Clean Architecture**, **Dart Concurrency & Isolates**, **Flutter Networking & Offline Sync**, **Flutter Testing & TDD**, and **Flutter Rendering Pipeline, CustomPainters & Animations**.
 
 ---
 
@@ -23,13 +23,18 @@ That's it! All package dependencies across all tracks are fetched automatically.
 
 ---
 
-## 🗂️ Workspace Architecture (7 Sequenced Tracks)
+## 🗂️ Workspace Architecture (8 Sequenced Tracks)
 
 ```text
 /home/neon/programs/DSA/
 ├── README.md                              # Master Workspace Portal
 ├── setup.dart                             # 1-Command Setup Script
 ├── pubspec.yaml                           # Workspace Pubspec
+│
+├── 00_flutter_ui_playground/              # TRACK 0: FLUTTER UI PLAYGROUND & ESSENTIALS (11 UI Apps, Easy->Hard)
+│   ├── README.md                          # UI Building Blocks Cheat Sheet
+│   ├── todo_playground.md                 # Interactive Progress Checklist
+│   └── lib/                               # 11 UI Apps (Counter, Calculator, Neumorphism, etc.)
 │
 ├── 01_neetcode_150_dsa/                   # TRACK 1: DATA STRUCTURES & ALGORITHMS (150 Problems)
 │   ├── README.md                          # DSA Cheat Sheet & Topic Breakdown
@@ -66,6 +71,18 @@ That's it! All package dependencies across all tracks are fetched automatically.
     ├── todo_graphics.md                   # Interactive Progress Checklist
     └── lib/                               # 3-Tree Pipeline, Canvas, CustomPainters, & Matrix4
 ```
+
+---
+
+## 📱 Track 0: Flutter UI Playground & Essentials
+- 🎯 **11 Essential Flutter UI Apps** ordered from Easy to Hard.
+- 🎨 **Level 1 to Level 3**: Counter, Background Color, Random Colors, Pass Message, Random Quotes, Testimonials, Modal Dialogs, Filterable List, Image Carousel, Calculator, and Neumorphism UI.
+- 📋 **[View Playground Checklist (todo_playground.md)](00_flutter_ui_playground/todo_playground.md)**
+- 🚀 **How to Run**:
+  ```bash
+  cd 00_flutter_ui_playground
+  flutter run -d linux lib/main.dart
+  ```
 
 ---
 
@@ -163,7 +180,7 @@ That's it! All package dependencies across all tracks are fetched automatically.
 git checkout template
 
 # 2. Create a new practice branch
-git checkout -b practice/custom-pie-chart
+git checkout -b practice/counter-ui
 
 # 3. Solve problems and merge back into main when done!
 ```

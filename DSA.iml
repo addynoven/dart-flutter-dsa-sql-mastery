@@ -11,6 +11,9 @@
       <excludeFolder url="file://$MODULE_DIR$/05_flutter_networking_sync/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/06_flutter_testing_harness/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/07_flutter_rendering_graphics/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/00_flutter_ui_playground/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/00_flutter_ui_playground/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/00_flutter_ui_playground/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

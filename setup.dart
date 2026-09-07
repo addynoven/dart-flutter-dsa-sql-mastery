@@ -5,8 +5,9 @@ void main() async {
   print('🚀 Setting up Flutter & Dart Interview Mastery Workspace');
   print('===================================================\n');
 
-  // 1. Configure Sub-Packages
+  // 1. Configure Sub-Packages (Tracks 0 to 7)
   final packages = [
+    '00_flutter_ui_playground',
     '01_neetcode_150_dsa',
     '02_dart_sql_mastery',
     '03_flutter_architecture_mastery',
@@ -80,6 +81,7 @@ void main() async {
   print('===================================================');
   print('🎉 Setup Complete! You are ready to start practicing.');
   print('===================================================');
+  print('• Run UI Playground:       cd 00_flutter_ui_playground && flutter run -d linux lib/main.dart');
   print('• Run DSA Exercise:        cd 01_neetcode_150_dsa && dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart');
   print('• Run SQL Exercise:        cd 02_dart_sql_mastery && dart run lib/part2_interview_scenarios/01_combine_two_tables.dart');
   print('• Run Arch Exercise:       cd 03_flutter_architecture_mastery && flutter run lib/part2_interview_scenarios/01_shopping_cart_bloc.dart');
