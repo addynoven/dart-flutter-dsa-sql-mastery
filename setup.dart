@@ -5,6 +5,7 @@ void main() async {
   print('🚀 Setting up Dart & Flutter DSA & SQL Mastery Workspace');
   print('===================================================\n');
 
+  // 1. Configure Sub-Packages
   final packages = ['neetcode_150_dsa', 'dart_sql_mastery'];
 
   for (final pkg in packages) {
@@ -22,6 +23,39 @@ void main() async {
       print('❌ Failed to configure $pkg:');
       print(result.stderr);
     }
+  }
+
+  // 2. Git Branch Protection & Practice Branch Creation
+  try {
+    final branchResult = await Process.run(
+      'git',
+      ['branch', '--show-current'],
+      runInShell: true,
+    );
+
+    final currentBranch = branchResult.stdout.toString().trim();
+
+    if (currentBranch == 'template' || currentBranch == 'main') {
+      final timestamp = DateTime.now().millisecondsSinceEpoch.toString().substring(7);
+      final newBranch = 'practice/workspace-$timestamp';
+      print('📌 You are currently on protected branch "$currentBranch".');
+      print('🌿 Automatically creating practice branch "$newBranch"...');
+
+      final checkoutResult = await Process.run(
+        'git',
+        ['checkout', '-b', newBranch],
+        runInShell: true,
+      );
+
+      if (checkoutResult.exitCode == 0) {
+        print('✅ Switched to new practice branch: $newBranch');
+        print('🔒 Branch "$currentBranch" is protected from accidental commits!\n');
+      }
+    } else if (currentBranch.isNotEmpty) {
+      print('🌿 Active Practice Branch: "$currentBranch"\n');
+    }
+  } catch (e) {
+    // Git CLI not available or non-git environment
   }
 
   print('===================================================');
