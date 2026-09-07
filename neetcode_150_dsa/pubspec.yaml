@@ -1,5 +1,5 @@
-name: flutter_mobile_dsa_sql_mastery
-description: Master Workspace for NeetCode 150 DSA and SQLite Raw SQL in Dart & Flutter.
+name: neetcode_150_dart
+description: NeetCode 150 solutions and starter code in Dart for Flutter & Mobile Dev Interviews.
 version: 1.0.0
 publish_to: none
 
