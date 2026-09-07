@@ -1,5 +1,7 @@
-/// Scenario 07: Dynamic Theme Mode & Localization Switcher
-/// Problem: Manage global app theme and locale switching using Provider.
+/*
+Scenario 07: Dynamic Theme Mode & Localization Switcher
+Problem: Manage global app theme and locale switching using Provider.
+*/
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

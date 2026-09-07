@@ -1,5 +1,7 @@
-/// Lesson 01: Cubit Basics & Simple State Transitions
-/// Concept: Cubit is a simplified BLoC subclass that exposes methods to emit new states.
+/*
+Lesson 01: Cubit Basics & Simple State Transitions
+Concept: Cubit is a simplified BLoC subclass that exposes methods to emit new states.
+*/
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

@@ -1,5 +1,7 @@
-/// Scenario 03: Offline News Feed with Clean Architecture
-/// Problem: Build a news reader using Clean Architecture that falls back to local storage when offline.
+/*
+Scenario 03: Offline News Feed with Clean Architecture
+Problem: Build a news reader using Clean Architecture that falls back to local storage when offline.
+*/
 
 import 'package:flutter/material.dart';
 

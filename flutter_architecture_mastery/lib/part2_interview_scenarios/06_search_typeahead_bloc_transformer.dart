@@ -1,5 +1,7 @@
-/// Scenario 06: Debounced Typeahead Search with BLoC Transformers
-/// Problem: Prevent API spam by debouncing live user search queries using Event Transformers in BLoC.
+/*
+Scenario 06: Debounced Typeahead Search with BLoC Transformers
+Problem: Prevent API spam by debouncing live user search queries using Event Transformers in BLoC.
+*/
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

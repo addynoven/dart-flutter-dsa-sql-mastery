@@ -1,5 +1,7 @@
-/// Scenario 05: Real-Time Chat Stream & Message Buffering with BLoC
-/// Problem: Handle live WebSocket / Stream chat updates with BLoC.
+/*
+Scenario 05: Real-Time Chat Stream & Message Buffering with BLoC
+Problem: Handle live WebSocket / Stream chat updates with BLoC.
+*/
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

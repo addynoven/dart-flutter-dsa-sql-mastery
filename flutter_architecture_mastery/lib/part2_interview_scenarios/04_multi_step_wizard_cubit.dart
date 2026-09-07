@@ -1,5 +1,7 @@
-/// Scenario 04: Multi-Step Registration Wizard with Cubit
-/// Problem: Manage multi-page form registration state (Personal Info -> Address -> Payment -> Summary) using Cubit.
+/*
+Scenario 04: Multi-Step Registration Wizard with Cubit
+Problem: Manage multi-page form registration state (Personal Info -> Address -> Payment -> Summary) using Cubit.
+*/
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

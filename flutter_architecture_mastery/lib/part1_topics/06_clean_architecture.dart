@@ -1,5 +1,7 @@
-/// Lesson 06: Clean Architecture Layer Separation
-/// Concept: Decoupling Data Sources -> Repositories -> Use Cases -> Presentation Views.
+/*
+Lesson 06: Clean Architecture Layer Separation
+Concept: Decoupling Data Sources -> Repositories -> Use Cases -> Presentation Views.
+*/
 
 import 'package:flutter/material.dart';
 

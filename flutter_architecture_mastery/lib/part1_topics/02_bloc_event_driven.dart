@@ -1,5 +1,7 @@
-/// Lesson 02: Event-Driven BLoC (BlocBuilder, BlocListener, BlocConsumer)
-/// Concept: BLoC processes explicit Events and emits States via on<Event> handlers.
+/*
+Lesson 02: Event-Driven BLoC (BlocBuilder, BlocListener, BlocConsumer)
+Concept: BLoC processes explicit Events and emits States via on<Event> handlers.
+*/
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

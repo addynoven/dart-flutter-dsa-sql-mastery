@@ -1,5 +1,7 @@
-/// Scenario 08: Paginated Infinite Scroll List with Riverpod
-/// Problem: Implement infinite scrolling pagination state with Riverpod.
+/*
+Scenario 08: Paginated Infinite Scroll List with Riverpod
+Problem: Implement infinite scrolling pagination state with Riverpod.
+*/
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

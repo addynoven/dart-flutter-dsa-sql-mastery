@@ -1,5 +1,7 @@
-/// Scenario 10: App Settings Repository with Clean Architecture
-/// Problem: Build an app settings storage repository pattern following Clean Architecture rules.
+/*
+Scenario 10: App Settings Repository with Clean Architecture
+Problem: Build an app settings storage repository pattern following Clean Architecture rules.
+*/
 
 import 'package:flutter/material.dart';
 

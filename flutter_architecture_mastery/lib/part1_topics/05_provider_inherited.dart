@@ -1,5 +1,7 @@
-/// Lesson 05: Provider & ChangeNotifierProvider
-/// Concept: Simple reactive state management using ChangeNotifier and Consumer.
+/*
+Lesson 05: Provider & ChangeNotifierProvider
+Concept: Simple reactive state management using ChangeNotifier and Consumer.
+*/
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

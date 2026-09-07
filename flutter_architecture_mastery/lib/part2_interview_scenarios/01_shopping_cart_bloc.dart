@@ -1,5 +1,7 @@
-/// Scenario 01: Multi-Item Shopping Cart with BLoC
-/// Problem: Build an e-commerce shopping cart using BLoC that manages product selection, quantity increment/decrement, and live price total calculation.
+/*
+Scenario 01: Multi-Item Shopping Cart with BLoC
+Problem: Build an e-commerce shopping cart using BLoC that manages product selection, quantity increment/decrement, and live price total calculation.
+*/
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

@@ -1,5 +1,7 @@
-/// Scenario 02: Authentication & Token Refresh Flow with Riverpod
-/// Problem: Build an authentication flow managing token state, expired session handling, and login/logout transitions with Riverpod.
+/*
+Scenario 02: Authentication & Token Refresh Flow with Riverpod
+Problem: Build an authentication flow managing token state, expired session handling, and login/logout transitions with Riverpod.
+*/
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

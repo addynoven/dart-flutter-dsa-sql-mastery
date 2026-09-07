@@ -1,5 +1,7 @@
-/// Lesson 03: Riverpod Providers & StateNotifierProvider
-/// Concept: Compile-safe reactive dependency injection and state management with Riverpod.
+/*
+Lesson 03: Riverpod Providers & StateNotifierProvider
+Concept: Compile-safe reactive dependency injection and state management with Riverpod.
+*/
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

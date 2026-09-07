@@ -1,5 +1,7 @@
-/// Scenario 09: Order Checkout State Machine with Cubit
-/// Problem: Manage complex multi-state order checkout (Idle -> Processing -> PaymentSuccess -> Failed) using Cubit.
+/*
+Scenario 09: Order Checkout State Machine with Cubit
+Problem: Manage complex multi-state order checkout (Idle -> Processing -> PaymentSuccess -> Failed) using Cubit.
+*/
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

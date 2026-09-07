@@ -1,5 +1,7 @@
-/// Lesson 04: Riverpod AsyncNotifier & AsyncValue
-/// Concept: Handling asynchronous data loading with AsyncValue (data, loading, error).
+/*
+Lesson 04: Riverpod AsyncNotifier & AsyncValue
+Concept: Handling asynchronous data loading with AsyncValue (data, loading, error).
+*/
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
