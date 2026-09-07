@@ -1,6 +1,6 @@
 # 🚀 Mobile Developer Interview Mastery in Dart & Flutter
 
-A comprehensive, production-ready interview preparation workspace in **Dart & Flutter**, containing complete practice suites for **Data Structures & Algorithms**, **SQLite & Raw SQL Database Mastery**, and **Flutter State Management & Clean Architecture**.
+A comprehensive, production-ready interview preparation workspace in **Dart & Flutter**, containing complete practice suites for **Data Structures & Algorithms**, **SQLite & Raw SQL Database Mastery**, **Flutter State Management & Clean Architecture**, and **Dart Concurrency & Isolates**.
 
 ---
 
@@ -34,22 +34,22 @@ That's it! All package dependencies across all tracks are fetched automatically.
 ├── neetcode_150_dsa/                      # TRACK 1: DATA STRUCTURES & ALGORITHMS (150 Problems)
 │   ├── README.md                          # DSA Cheat Sheet & Topic Breakdown
 │   ├── todo_list.md                       # Interactive 150-Problem Progress Checklist
-│   ├── pubspec.yaml                       # Package Dependencies (collection, lints)
 │   └── lib/                               # 18 Topic Categories (150 Dart Problem Files)
 │
 ├── dart_sql_mastery/                      # TRACK 2: SQLITE & RAW SQL MASTERY (126 Exercises)
 │   ├── README.md                          # SQL & sqflite Cheat Sheet
 │   ├── todo_sql.md                        # Interactive 126-Exercise Progress Checklist
-│   ├── pubspec.yaml                       # Package Dependencies (sqlite3, ffi)
 │   └── lib/                               # 20 Topic Lessons + 106 LeetCode SQL Scenarios
 │
-└── flutter_architecture_mastery/          # TRACK 3: STATE MANAGEMENT & CLEAN ARCHITECTURE
-    ├── README.md                          # State Management & Architecture Cheat Sheet
-    ├── todo_arch.md                       # Interactive 16-Exercise Progress Checklist
-    ├── pubspec.yaml                       # Dependencies (flutter_bloc, flutter_riverpod, provider)
-    └── lib/                               # 6 Topic Lessons + 10 Real-World Scenario Apps
-        ├── part1_topics/                  # Cubit, BLoC, Riverpod, Provider & Clean Arch Lessons
-        └── part2_interview_scenarios/     # Shopping Cart BLoC, Auth Riverpod, Clean Arch News, etc.
+├── flutter_architecture_mastery/          # TRACK 3: STATE MANAGEMENT & CLEAN ARCHITECTURE (16 Exercises)
+│   ├── README.md                          # State Management & Architecture Cheat Sheet
+│   ├── todo_arch.md                       # Interactive Progress Checklist
+│   └── lib/                               # Cubit, BLoC, Riverpod, Provider & Clean Arch Scenarios
+│
+└── dart_concurrency_isolates/            # TRACK 4: DART EVENT LOOP & ISOLATES MULTITHREADING (15 Exercises)
+    ├── README.md                          # Concurrency & Isolates Cheat Sheet
+    ├── todo_concurrency.md                # Interactive Progress Checklist
+    └── lib/                               # Event Loop, Microtasks, Streams, & Background Isolates
 ```
 
 ---
@@ -57,7 +57,7 @@ That's it! All package dependencies across all tracks are fetched automatically.
 ## ⚡ Track 1: NeetCode 150 Data Structures & Algorithms
 - 🎯 **150 Coding Problems** covering all core DSA categories.
 - 📋 **[View DSA Checklist (todo_list.md)](neetcode_150_dsa/todo_list.md)**
-- 🚀 **How to Run DSA Exercises**:
+- 🚀 **How to Run**:
   ```bash
   cd neetcode_150_dsa
   dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart
@@ -69,7 +69,7 @@ That's it! All package dependencies across all tracks are fetched automatically.
 - 🎯 **126 Total SQL Exercises** (20 Topic Lessons + 106 LeetCode Scenario Questions).
 - 📊 **Visual Terminal Tables**: Every query renders as a visual Unicode table in your Linux terminal.
 - 📋 **[View SQL Checklist (todo_sql.md)](dart_sql_mastery/todo_sql.md)**
-- 🚀 **How to Run SQL Exercises**:
+- 🚀 **How to Run**:
   ```bash
   cd dart_sql_mastery
   dart run lib/part2_interview_scenarios/01_combine_two_tables.dart
@@ -81,10 +81,22 @@ That's it! All package dependencies across all tracks are fetched automatically.
 - 🎯 **16 Total Interactive Flutter Exercises** (6 Topic Lessons + 10 Real-World Interview Scenario Apps).
 - 🎨 **Flutter UI Widgets**: Interactive Material UI widgets (`flutter_bloc`, `flutter_riverpod`, `provider`).
 - 📋 **[View Architecture Checklist (todo_arch.md)](flutter_architecture_mastery/todo_arch.md)**
-- 🚀 **How to Run Architecture Exercises**:
+- 🚀 **How to Run**:
   ```bash
   cd flutter_architecture_mastery
   flutter run lib/part2_interview_scenarios/01_shopping_cart_bloc.dart
+  ```
+
+---
+
+## ⚡ Track 4: Dart Concurrency, Event Loop & Isolates
+- 🎯 **15 Concurrency Exercises** (5 Topic Lessons + 10 Real-World Multithreading Scenarios).
+- ⚡ **Zero UI Jank**: Offload 50MB JSON parsing, image compression, and crypto hashing to background Isolates (`Isolate.run()`, `ReceivePort`/`SendPort`).
+- 📋 **[View Concurrency Checklist (todo_concurrency.md)](dart_concurrency_isolates/todo_concurrency.md)**
+- 🚀 **How to Run**:
+  ```bash
+  cd dart_concurrency_isolates
+  dart run lib/part2_interview_scenarios/01_heavy_json_parsing_isolate.dart
   ```
 
 ---
@@ -100,7 +112,7 @@ That's it! All package dependencies across all tracks are fetched automatically.
 git checkout template
 
 # 2. Create a new practice branch
-git checkout -b practice/shopping-cart-bloc
+git checkout -b practice/heavy-json-isolate
 
 # 3. Solve problems and merge back into main when done!
 ```
