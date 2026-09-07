@@ -27,6 +27,14 @@ void main() async {
 
   // 2. Git Branch Protection & Practice Branch Creation
   try {
+    // Activate Git pre-push Watchdog hook locally
+    await Process.run(
+      'git',
+      ['config', 'core.hooksPath', '.githooks'],
+      runInShell: true,
+    );
+    print('🛡️ Git Watchdog Hook activated (.githooks/pre-push).\n');
+
     final branchResult = await Process.run(
       'git',
       ['branch', '--show-current'],

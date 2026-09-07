@@ -1,0 +1,19 @@
+name: Template Branch Protection Watchdog
+
+on:
+  push:
+    branches:
+      - template
+
+jobs:
+  block-direct-template-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enforce Template Protection
+        run: |
+          echo "================================================================="
+          echo "❌ DIRECT PUSH TO TEMPLATE BRANCH DETECTED!"
+          echo "The 'template' branch is a pristine, frozen starter template."
+          echo "Please push your changes to 'main' or a practice branch."
+          echo "================================================================="
+          exit 1
