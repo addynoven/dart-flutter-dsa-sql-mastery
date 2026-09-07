@@ -7,18 +7,18 @@ void main() async {
 
   // 1. Configure Sub-Packages
   final packages = [
-    'neetcode_150_dsa',
-    'dart_sql_mastery',
-    'flutter_architecture_mastery',
-    'dart_concurrency_isolates',
-    'flutter_networking_sync',
-    'flutter_testing_harness',
-    'flutter_rendering_graphics',
+    '01_neetcode_150_dsa',
+    '02_dart_sql_mastery',
+    '03_flutter_architecture_mastery',
+    '04_dart_concurrency_isolates',
+    '05_flutter_networking_sync',
+    '06_flutter_testing_harness',
+    '07_flutter_rendering_graphics',
   ];
 
   for (final pkg in packages) {
     print('📦 Fetching dependencies for $pkg...');
-    final isFlutterPkg = pkg.startsWith('flutter');
+    final isFlutterPkg = pkg.contains('flutter');
     final cmd = isFlutterPkg ? 'flutter' : 'dart';
 
     final result = await Process.run(
@@ -80,11 +80,11 @@ void main() async {
   print('===================================================');
   print('🎉 Setup Complete! You are ready to start practicing.');
   print('===================================================');
-  print('• Run DSA Exercise:        cd neetcode_150_dsa && dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart');
-  print('• Run SQL Exercise:        cd dart_sql_mastery && dart run lib/part2_interview_scenarios/01_combine_two_tables.dart');
-  print('• Run Arch Exercise:       cd flutter_architecture_mastery && flutter run lib/part2_interview_scenarios/01_shopping_cart_bloc.dart');
-  print('• Run Concurrency:         cd dart_concurrency_isolates && dart run lib/part2_interview_scenarios/01_heavy_json_parsing_isolate.dart');
-  print('• Run Networking Exercise: cd flutter_networking_sync && flutter run lib/part2_interview_scenarios/01_jwt_auth_interceptor_flow.dart');
-  print('• Run Testing Suite:       cd flutter_testing_harness && flutter test');
-  print('• Run Graphics App:        cd flutter_rendering_graphics && flutter run -d linux lib/part2_interview_scenarios/01_custom_pie_chart.dart\n');
+  print('• Run DSA Exercise:        cd 01_neetcode_150_dsa && dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart');
+  print('• Run SQL Exercise:        cd 02_dart_sql_mastery && dart run lib/part2_interview_scenarios/01_combine_two_tables.dart');
+  print('• Run Arch Exercise:       cd 03_flutter_architecture_mastery && flutter run lib/part2_interview_scenarios/01_shopping_cart_bloc.dart');
+  print('• Run Concurrency:         cd 04_dart_concurrency_isolates && dart run lib/part2_interview_scenarios/01_heavy_json_parsing_isolate.dart');
+  print('• Run Networking Exercise: cd 05_flutter_networking_sync && flutter run lib/part2_interview_scenarios/01_jwt_auth_interceptor_flow.dart');
+  print('• Run Testing Suite:       cd 06_flutter_testing_harness && flutter test');
+  print('• Run Graphics App:        cd 07_flutter_rendering_graphics && flutter run -d linux lib/part2_interview_scenarios/01_custom_pie_chart.dart\n');
 }
