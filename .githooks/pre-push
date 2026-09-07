@@ -4,6 +4,14 @@
 current_branch=$(git branch --show-current)
 protected_branch="template"
 
+# Allow maintainer override if ALLOW_TEMPLATE_UPDATE environment variable is set
+if [ "$ALLOW_TEMPLATE_UPDATE" = "true" ] || [ "$ALLOW_TEMPLATE_UPDATE" = "1" ]; then
+    echo "================================================================="
+    echo "🔓 MAINTAINER OVERRIDE: ALLOW_TEMPLATE_UPDATE detected. Pushing..."
+    echo "================================================================="
+    exit 0
+fi
+
 while read local_ref local_oid remote_ref remote_oid
 do
     if [ "$remote_ref" = "refs/heads/$protected_branch" ] || [ "$current_branch" = "$protected_branch" ]; then
@@ -11,8 +19,8 @@ do
         echo "❌ ACCESS DENIED: Direct push to '$protected_branch' branch is forbidden!"
         echo "================================================================="
         echo "The '$protected_branch' branch is a frozen template."
-        echo "Please create a practice branch before committing or pushing:"
-        echo "  git checkout -b practice/your-topic-name"
+        echo "If you are the maintainer updating the template, push with:"
+        echo "  ALLOW_TEMPLATE_UPDATE=true git push origin template"
         echo "================================================================="
         exit 1
     fi

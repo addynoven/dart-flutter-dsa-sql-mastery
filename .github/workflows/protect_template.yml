@@ -9,11 +9,17 @@ jobs:
   block-direct-template-push:
     runs-on: ubuntu-latest
     steps:
-      - name: Enforce Template Protection
+      - name: Enforce Template Protection with Maintainer Bypass
         run: |
+          COMMIT_MSG="${{ github.event.head_commit.message }}"
+          if [[ "$COMMIT_MSG" == *"[template sync]"* ]] || [[ "$COMMIT_MSG" == *"[admin update]"* ]]; then
+            echo "🔓 MAINTAINER OVERRIDE: Template sync commit detected ('$COMMIT_MSG')."
+            exit 0
+          fi
+
           echo "================================================================="
           echo "❌ DIRECT PUSH TO TEMPLATE BRANCH DETECTED!"
           echo "The 'template' branch is a pristine, frozen starter template."
-          echo "Please push your changes to 'main' or a practice branch."
+          echo "To push maintainer updates to 'template', include '[template sync]' in your commit message."
           echo "================================================================="
           exit 1
