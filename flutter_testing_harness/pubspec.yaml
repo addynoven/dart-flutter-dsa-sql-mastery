@@ -1,0 +1,26 @@
+name: flutter_testing_harness
+description: Flutter Testing, TDD, Unit Tests, Mocktail Mocks, Widget Tests, and Integration Testing Mastery.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.3
+  flutter_riverpod: ^2.5.1
+  provider: ^6.1.1
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
+  bloc_test: ^9.1.5
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true

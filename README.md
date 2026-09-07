@@ -1,6 +1,6 @@
 # 🚀 Mobile Developer Interview Mastery in Dart & Flutter
 
-A comprehensive, production-ready interview preparation workspace in **Dart & Flutter**, containing complete practice suites for **Data Structures & Algorithms**, **SQLite & Raw SQL Database Mastery**, **Flutter State Management & Clean Architecture**, **Dart Concurrency & Isolates**, and **Flutter Networking, Interceptors & Offline Sync**.
+A comprehensive, production-ready interview preparation workspace in **Dart & Flutter**, containing complete practice suites for **Data Structures & Algorithms**, **SQLite & Raw SQL Database Mastery**, **Flutter State Management & Clean Architecture**, **Dart Concurrency & Isolates**, **Flutter Networking & Offline Sync**, and **Flutter Testing & TDD**.
 
 ---
 
@@ -51,10 +51,15 @@ That's it! All package dependencies across all tracks are fetched automatically.
 │   ├── todo_concurrency.md                # Interactive Progress Checklist
 │   └── lib/                               # Event Loop, Microtasks, Streams, & Background Isolates
 │
-└── flutter_networking_sync/               # TRACK 5: NETWORKING, INTERCEPTORS & OFFLINE SYNC (15 Exercises)
-    ├── README.md                          # Networking & Sync Cheat Sheet
-    ├── todo_networking.md                 # Interactive Progress Checklist
-    └── lib/                               # HTTP/Dio, Interceptors, 401 Refresh, & Offline Sync
+├── flutter_networking_sync/               # TRACK 5: NETWORKING, INTERCEPTORS & OFFLINE SYNC (15 Exercises)
+│   ├── README.md                          # Networking & Sync Cheat Sheet
+│   ├── todo_networking.md                 # Interactive Progress Checklist
+│   └── lib/                               # HTTP/Dio, Interceptors, 401 Refresh, & Offline Sync
+│
+└── flutter_testing_harness/               # TRACK 6: FLUTTER TESTING, TDD & MOCKTAIL (15 Exercises)
+    ├── README.md                          # Testing & TDD Cheat Sheet
+    ├── todo_testing.md                    # Interactive Progress Checklist
+    └── lib/                               # Unit Tests, Mocktail Mocks, Widget Tests & Gestures
 ```
 
 ---
@@ -118,6 +123,18 @@ That's it! All package dependencies across all tracks are fetched automatically.
 
 ---
 
+## 🧪 Track 6: Flutter Testing, TDD & Mocktail
+- 🎯 **15 Testing Exercises** (5 Topic Lessons + 10 Real-World Testing Scenarios).
+- 🧪 **Unit & Widget Testing**: Test functions, mock repositories with `mocktail`, test BLoCs with `blocTest`, and test UI gestures with `WidgetTester`.
+- 📋 **[View Testing Checklist (todo_testing.md)](flutter_testing_harness/todo_testing.md)**
+- 🚀 **How to Run**:
+  ```bash
+  cd flutter_testing_harness
+  flutter test
+  ```
+
+---
+
 ## 🌿 Git Branching Strategy
 
 - 🧊 **`template` Branch**: Frozen starter template containing clean problem stubs, full question descriptions, and pre-wired test runners.
@@ -129,7 +146,7 @@ That's it! All package dependencies across all tracks are fetched automatically.
 git checkout template
 
 # 2. Create a new practice branch
-git checkout -b practice/jwt-auth-interceptor
+git checkout -b practice/shopping-cart-bloc-test
 
 # 3. Solve problems and merge back into main when done!
 ```
