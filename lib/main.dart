@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '00_flutter_ui_playground/lib/screens/screens.dart' as track0;
-import '03_flutter_architecture_mastery/lib/main.dart' as track3;
-import '05_flutter_networking_sync/lib/main.dart' as track5;
-import '06_flutter_testing_harness/lib/main.dart' as track6;
-import '07_flutter_rendering_graphics/lib/main.dart' as track7;
+import '00_flutter_ui_playground/screens/screens.dart' as track0;
+import '02_dart_sql_mastery/sql_mastery_flutter.dart' as track2;
+import '03_flutter_architecture_mastery/main.dart' as track3;
+import '05_flutter_networking_sync/main.dart' as track5;
+import '06_flutter_testing_harness/main.dart' as track6;
+import '07_flutter_rendering_graphics/main.dart' as track7;
 
 void main() {
   runApp(const MasterAppPortal());
@@ -47,15 +48,15 @@ class MasterPortalHomeScreen extends StatelessWidget {
         subtitle: '150 Coding Problems across 18 Topic Categories in Dart',
         color: Colors.green,
         icon: Icons.code,
-        onTap: () => _showTerminalInfoDialog(context, 'Track 01: NeetCode 150 DSA', 'cd lib/01_neetcode_150_dsa && dart run lib/01_arrays_and_hashing/01_contains_duplicate.dart'),
+        onTap: () => _showTerminalInfoDialog(context, 'Track 01: NeetCode 150 DSA', 'dart run lib/01_neetcode_150_dsa/01_arrays_and_hashing/01_contains_duplicate.dart'),
       ),
       _TrackPortalItem(
         number: '02',
         title: 'Dart & Flutter SQLite & Raw SQL Mastery',
-        subtitle: '126 SQL Exercises with Visual Unicode Terminal Table Renderer',
+        subtitle: '🎮 Gamified "Fix SQL to Fix UI" Interactive Scenarios + 126 SQL Questions',
         color: Colors.teal,
         icon: Icons.storage,
-        onTap: () => _showTerminalInfoDialog(context, 'Track 02: SQLite Mastery', 'cd lib/02_dart_sql_mastery && dart run lib/part2_interview_scenarios/01_combine_two_tables.dart'),
+        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const track2.SqlMasteryDashboard())),
       ),
       _TrackPortalItem(
         number: '03',
@@ -71,7 +72,7 @@ class MasterPortalHomeScreen extends StatelessWidget {
         subtitle: '15 Multithreading Exercises: 50MB JSON Parsing, Crypto & Ports',
         color: Colors.amber.shade800,
         icon: Icons.bolt,
-        onTap: () => _showTerminalInfoDialog(context, 'Track 04: Concurrency & Isolates', 'cd lib/04_dart_concurrency_isolates && dart run lib/part2_interview_scenarios/01_heavy_json_parsing_isolate.dart'),
+        onTap: () => _showTerminalInfoDialog(context, 'Track 04: Concurrency & Isolates', 'dart run lib/04_dart_concurrency_isolates/part2_interview_scenarios/01_heavy_json_parsing_isolate.dart'),
       ),
       _TrackPortalItem(
         number: '05',
