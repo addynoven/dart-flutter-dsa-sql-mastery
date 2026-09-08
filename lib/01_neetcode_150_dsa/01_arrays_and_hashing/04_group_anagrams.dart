@@ -23,8 +23,12 @@ class TreeNode {
 class Solution {
   /// Solution method for Group Anagrams
   dynamic groupAnagrams(dynamic strs) {
-    // TODO: Write your solution algorithm here
-    return null;
+    Map<String, List<String>> anagramGroups = {};
+    for (var str in strs) {
+      var sortedStr = (str as String).split('').toList()..sort();
+      anagramGroups.putIfAbsent(sortedStr.join(), () => []).add(str);
+    }
+    return anagramGroups.values.toList();
   }
 }
 
@@ -32,7 +36,7 @@ void main() {
   final solution = Solution();
   print('=== Testing: Group Anagrams ===\n');
   // --- Example 1 ---
-  final strs1 = ["eat","tea","tan","ate","nat","bat"];
+  final strs1 = ["eat", "tea", "tan", "ate", "nat", "bat"];
   final result1 = solution.groupAnagrams(strs1);
   print('Example 1 Result: $result1');
   print('Expected Output:  [["bat"],["nat","tan"],["ate","eat","tea"]]\n');
