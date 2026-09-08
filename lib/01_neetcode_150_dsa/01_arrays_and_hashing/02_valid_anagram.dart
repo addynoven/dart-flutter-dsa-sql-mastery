@@ -22,9 +22,16 @@ class TreeNode {
 
 class Solution {
   /// Solution method for Valid Anagram
-  dynamic validAnagram(dynamic s, dynamic t) {
-    // TODO: Write your solution algorithm here
-    return null;
+  bool validAnagram(dynamic s, dynamic t) {
+    if (s.length != t.length) {
+      return false;
+    }
+    final count = List<int>.filled(26, 0);
+    for (var i = 0; i < s.length; i++) {
+      count[s.codeUnitAt(i) - 97]++;
+      count[t.codeUnitAt(i) - 97]--;
+    }
+    return count.every((value) => value == 0);
   }
 }
 
