@@ -23,8 +23,13 @@ class TreeNode {
 class Solution {
   /// Solution method for Top K Frequent Elements
   dynamic topKFrequentElements(dynamic nums, dynamic k) {
-    // TODO: Write your solution algorithm here
-    return null;
+    Map<int, int> frequencyMap = {};
+    for (var num in nums) {
+      frequencyMap[num] = (frequencyMap[num] ?? 0) + 1;
+    }
+    return frequencyMap.entries.toList()
+      ..sort((a, b) => b.value.compareTo(a.value))
+      ..take(k).map((entry) => entry.key).toList();
   }
 }
 
@@ -32,7 +37,7 @@ void main() {
   final solution = Solution();
   print('=== Testing: Top K Frequent Elements ===\n');
   // --- Example 1 ---
-  final nums1 = [1,1,1,2,2,3];
+  final nums1 = [1, 1, 1, 2, 2, 3];
   final k1 = 2;
   final result1 = solution.topKFrequentElements(nums1, k1);
   print('Example 1 Result: $result1');
@@ -44,7 +49,7 @@ void main() {
   print('Example 2 Result: $result2');
   print('Expected Output:  [1]\n');
   // --- Example 3 ---
-  final nums3 = [1,2,1,2,1,2,3,1,3,2];
+  final nums3 = [1, 2, 1, 2, 1, 2, 3, 1, 3, 2];
   final k3 = 2;
   final result3 = solution.topKFrequentElements(nums3, k3);
   print('Example 3 Result: $result3');
